@@ -1,0 +1,13 @@
+.in-mobile-slider {
+  .owl-dots {
+    @extend %own-dots;
+    button.owl-dot {
+      &.active span {
+        @extend %own-dots-button-active-span;
+      }
+      span {
+        @extend %own-dots-button-span;
+      }
+    }
+  }
+}

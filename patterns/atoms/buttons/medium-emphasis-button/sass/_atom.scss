@@ -1,0 +1,18 @@
+.at-button-medium-emphasis{
+  @extend %button;
+  background-color: $primary_3;
+  color: $neutral_1;
+  padding:0 12px;
+  &:hover{
+    background-color: transparentize($primary_3, .25);
+    color: $neutral_1;
+  }
+  &:disabled{
+    background-color: transparentize($primary_3, .75);
+    color: $neutral_1;
+  }
+  &:focus{
+    background-color: transparentize($primary_3, .5);
+    color: $neutral_1;
+  }
+}

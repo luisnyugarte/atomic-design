@@ -1,0 +1,27 @@
+.at-input-textfield{
+  @extend %input;
+}
+.at-input-label{
+  @extend %label-animate;
+  &.icon-left{
+    i{
+      left: 12px;
+    }
+    .at-input-textfield{
+      padding-left: $size_1x * 3;
+    }
+  }
+  &.icon-right{
+    i{
+      right: 12px;
+    }
+    .at-input-textfield{
+      padding-right: $size_1x * 3;
+    }
+  }
+  &.counter{
+    .at-input-textfield{
+      padding-right: $size_1x * 3;
+    }
+  }
+}

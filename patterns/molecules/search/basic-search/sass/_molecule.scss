@@ -1,0 +1,61 @@
+.ml-basic-search{
+  @extend %box-search;
+  .at-input-label{
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: $border_1 transparent;
+    background: transparentize($primary_1, .9);
+    padding: 6px 18px;
+    margin: 0;
+    width: 100%;
+    button, i{
+      position: absolute;
+      right: 0;
+      top: 6px;
+      background: none;
+      border: none;
+      padding: 0 24px;
+      margin: 0;
+      outline: none;
+      cursor: pointer;
+      &:before{
+        color: $neutral_2;
+        font-size: $font_8x;
+      }
+    }
+    i{
+      right: -48px;
+      top: -2px;
+      padding: 0;
+      &:before{
+        font-size: $font_14x;
+        color: $primary_1;
+      }
+    }
+    &:hover, &:focus-within{
+      border: $border_1 $primary_1;
+      outline: none;
+      .at-input-search{
+        border: none;
+      }
+    }
+    &:focus-within{
+      box-shadow: $shadow_1;
+      .at-input-search{
+        &::placeholder{
+          color: $neutral_2;
+        }
+      }
+      button{
+        &:before{
+          color: $primary_1;
+        }
+      }
+    }
+  }
+  &:focus-within{
+    .at-card-medium-emphasis{
+      display: block;
+    }
+  }
+}

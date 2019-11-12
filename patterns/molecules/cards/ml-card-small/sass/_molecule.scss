@@ -1,0 +1,42 @@
+.ml-card-small{
+  img{
+    max-width: 128px;
+    max-height: 128px;
+    float: left;
+    margin-right: 1rem;
+    @include for-mobile {
+      float: none;
+      margin-right: 0;
+    }
+  }
+  .content-card {
+    @extend %content-card;
+    padding: 1rem 1rem 0;
+    display: block;
+    .buttons-left{
+      @extend %buttons;
+      text-align: left;
+      @include for-mobile {
+        position: initial;
+        float: right;
+      }
+    }
+    .buttons-center{
+      @extend %buttons;
+      text-align: center;
+      @include for-mobile {
+        position: initial;
+        float: right;
+      }
+    }
+    .buttons-right{
+      @extend %buttons;
+      right: 1rem;
+      text-align: right;
+      @include for-mobile {
+        position: initial;
+        float: right;
+      }
+    }
+  }
+}

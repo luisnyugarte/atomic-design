@@ -1,0 +1,37 @@
+{
+  "name": "Progress Indicators",
+  "description": "Large Circular Indicator",
+  "type": "atom",
+  "stability": "stable",
+  "variations": {
+    "low-emphasis-button": {
+      "name": "Linear Indicator",
+      "assets": {
+        "html": [
+          "patterns/atoms/progress-indicators/linear-indicator/index.html"
+        ]
+      }
+    },
+    "medium-emphasis-button": {
+      "name": "Medium Circular Indicator",
+      "assets": {
+        "html": [
+          "patterns/atoms/progress-indicators/medium-circular-indicator/index.html"
+        ]
+      }
+    },
+    "content-container-button": {
+      "name": "Small Circular Indicator",
+      "assets": {
+        "html": [
+          "patterns/atoms/progress-indicators/small-circular-indicator/index.html"
+        ]
+      }
+    }
+  },
+  "assets": {
+    "html": [
+      "patterns/atoms/progress-indicators/large-circular-indicator/index.html"
+    ]
+  }
+}

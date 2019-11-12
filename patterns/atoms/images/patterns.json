@@ -1,0 +1,45 @@
+{
+  "name": "Images",
+  "description": "Avatar",
+  "type": "atom",
+  "stability": "stable",
+  "variations": {
+    "low-emphasis-button": {
+      "name": "Hero",
+      "assets": {
+        "html": [
+          "patterns/atoms/images/hero/index.html"
+        ]
+      }
+    },
+    "medium-emphasis-button": {
+      "name": "Landscape",
+      "assets": {
+        "html": [
+          "patterns/atoms/images/landscape/index.html"
+        ]
+      }
+    },
+    "content-container-button": {
+      "name": "Logo",
+      "assets": {
+        "html": [
+          "patterns/atoms/images/logo/index.html"
+        ]
+      }
+    },
+    "shadow-emphasis-button": {
+      "name": "Square",
+      "assets": {
+        "html": [
+          "patterns/atoms/images/square/index.html"
+        ]
+      }
+    }
+  },
+  "assets": {
+    "html": [
+      "patterns/atoms/images/avatar/index.html"
+    ]
+  }
+}

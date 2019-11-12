@@ -1,0 +1,170 @@
+%steps{
+  display: block;
+  @include for-mobile{
+    overflow: hidden;
+  }
+  .stepper{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 0 6px;
+    box-sizing: border-box;
+    position: relative;
+    @include for-mobile{
+      display: block;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      top: 32px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: transparentize($neutral_2, .8);
+      z-index: -1;
+      @include for-mobile{
+        top: 15px;
+        left: 14px;
+        width: 1px;
+        height: 100%;
+      }
+    }
+    .step{
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 100px;
+      text-align: center;
+      margin: 24px 0;
+      box-sizing: content-box;
+      @include for-mobile{
+        display: block;
+        max-width: 150px;
+        margin: 18px 0;
+        text-align: left;
+      }
+      &:first-child{
+        .status-step{
+          &:after{
+            content: "";
+            position: absolute;
+            top: 6px;
+            left: -10000%;
+            width: 9980%;
+            height: 1px;
+            background: $neutral_1;
+            z-index: 0;
+            @include for-mobile{
+              top: initial;
+              bottom: 16px;
+              left: 6px;
+              width: 1px;
+              height: 10000%;
+            }
+          }
+          @include for-mobile{
+            display: inline-block;
+          }
+        }
+      }
+      &:last-child{
+        .status-step{
+          &:after{
+            content: "";
+            position: absolute;
+            top: 6px;
+            left: 0;
+            width: 10000%;
+            height: 1px;
+            background: $neutral_1;
+            z-index: -1;
+            @include for-mobile{
+              top: 15px;
+              left: 6px;
+              width: 1px;
+              height: 10000%;
+            }
+          }
+        }
+      }
+      .status-step{
+        width: 14px;
+        height: 14px;
+        background: transparentize($neutral_2, .8);
+        border: 2px solid transparentize($neutral_2, 1);
+        border-radius: 50%;
+        margin: 0 auto 8px auto;
+        position: relative;
+        @include for-mobile{
+          display: inline-block;
+        }
+        i{
+          display: none;
+          font-size: 20px;
+          margin: -3px 0 0 -3px;
+          &:before{
+            color: $neutral_1;
+          }
+        }
+        &.active{
+          background: $neutral_1;
+          border: 2px solid $utility_1;
+          & + .at-font-small{
+            opacity: 1;
+          }
+          &:before{
+            content: "";
+            position: absolute;
+            top: 6px;
+            left: -10000%;
+            width: 10000%;
+            height: 1px;
+            background: $utility_1;
+            z-index: -1;
+            @include for-mobile{
+              position: absolute;
+              top: -10000%;
+              left: 6px;
+              width: 1px;
+              height: 10000%;
+            }
+          }
+        }
+        &.complete{
+          background: $utility_1;
+          border: 2px solid $utility_1;
+          & + .at-font-small{
+            opacity: 1;
+          }
+          i{
+            display: block;
+          }
+        }
+      }
+      .at-font-small{
+        font-size: $font_2x;
+        opacity: .2;
+        @include for-mobile{
+          display: inline-block;
+          vertical-align: top;
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+}
+%content-steps{
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  left: 0;
+  @include for-mobile{
+    position: relative;
+    padding-left: 100px;
+  }
+  .step-info{
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+}

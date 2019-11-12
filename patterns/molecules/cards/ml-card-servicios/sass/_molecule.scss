@@ -1,0 +1,73 @@
+.ml-card-servicios{
+  .at-card-low-emphasis{
+    padding: 0;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    @include for-mobile{
+      display: block;
+      padding: 12px 6px;
+      box-sizing: border-box;
+    }
+  }
+  img{
+    float: left;
+    @include for-mobile {
+      float: none;
+      margin-right: 0;
+      max-width: 100%;
+      max-height: initial;
+    }
+  }
+  .content-card {
+    @extend %content-card;
+    display: block;
+    .at-element-list{
+      @include for-mobile {
+        padding-bottom: 0;
+      }
+      li{
+        display: table;
+        margin: .5rem 0;
+        span {
+          display:table-cell;
+          vertical-align: middle;
+        }
+      }
+    }
+    .buttons-left{
+      button{
+        margin-left: 6px;
+      }
+      @extend %buttons;
+      text-align: left;
+      @include for-mobile {
+        position: initial;
+        float: none;
+      }
+    }
+    .buttons-center{
+      button{
+        margin-left: 6px;
+      }
+      @extend %buttons;
+      text-align: center;
+      @include for-mobile {
+        position: initial;
+        float: none;
+      }
+    }
+    .buttons-right{
+      button{
+        margin-left: 6px;
+      }
+      @extend %buttons;
+      right: 1rem;
+      text-align: right;
+      @include for-mobile {
+        position: initial;
+        float: none;
+      }
+    }
+  }
+}

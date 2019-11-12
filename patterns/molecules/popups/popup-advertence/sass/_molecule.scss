@@ -1,0 +1,25 @@
+.ml-popup-advertence {
+  @extend %fallball-popup;
+  .popup-content {
+    @extend %content-popup;
+    padding-left: $size_1x * 6.83;
+    text-align: left;
+    &:before{
+      content: "";
+      position: absolute;
+      left: 24px;
+      top: 15px;
+      font-size: $font_6x;
+      color: $product_1;
+    }
+    .at-font-p{
+      padding: $size_1x 0;
+    }
+    .buttons-right{
+      @extend %buttons;
+    }
+  }
+  .ic-cerrar {
+    @extend %ic-iconos-popup;
+  }
+}

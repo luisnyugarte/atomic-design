@@ -1,0 +1,44 @@
+.or-hight-slider{
+  @extend %banner;
+  .controls{
+    @extend %controls;
+    span{
+      background-size: auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 36px;
+      height: 36px;
+      border-radius: 100%;
+      display: none;
+    }
+    .play{
+      background-image: url("#{$imagesPath}icons/ic-play.svg");
+      background-color: transparentize($neutral_2, .77);
+      &.active{
+        display: block;
+      }
+    }
+    .stop{
+      background-image: url("#{$imagesPath}icons/ic-pause.svg");
+      background-color: transparentize($neutral_2, .36);
+      &.active{
+        display: block;
+      }
+    }
+  }
+}
+@include for-tablet{
+  .or-hight-slider{
+    .controls{
+      right: 12px;
+      bottom: 12px;
+      span{
+        width: 18px;
+        height: 18px;
+      }
+      .play, .stop{
+        background-size: 7px 7px;
+      }
+    }
+  }
+}

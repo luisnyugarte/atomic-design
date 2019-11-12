@@ -1,0 +1,47 @@
+%content-modal {
+  overflow-y: scroll;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: $grid;
+  height: auto;
+  bottom: 0;
+  animation-duration: .4s;
+  box-shadow: $shadow_2;
+  box-sizing: border-box;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $primary_1;
+    border-radius: 10px;
+  }
+}
+%fallball-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  animation-duration: .4s;
+}
+%ic-iconos {
+  color: $neutral_1;
+  font-size: 28px;
+  font-weight: bold;
+}
+@include for-tablet {
+  %content-modal{
+    width: 100%;
+  }
+  %buttons{
+    position: initial;
+    margin-top: 1rem;
+  }
+}

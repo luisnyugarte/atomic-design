@@ -1,0 +1,26 @@
+.ml-banner-center{
+  @extend %banner;
+  img{
+    width: 100%;
+    max-width: 1170px;
+    max-height: 244px;
+  }
+  .content-center{
+    @extend %content-align;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 35%;
+  }
+  .content-left{
+    @extend %content-align;
+    left: 10%;
+    max-width: 35%;
+  }
+  .content-right{
+    @extend %content-align;
+    left: 65%;
+    max-width: 35%;
+  }
+}

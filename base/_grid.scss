@@ -1,0 +1,60 @@
+$listColumn: 1,2,3,4,5,6,7,8,9,10,11,12;
+
+$numsColumns: 12,9,3;
+$listResponsive: ("s", "<=", $mobile_L), ("m", ">", $mobile_L), ("l", ">", $mobile), ("xl", ">", $tablet), ("xxl", ">", $desktop);
+
+@mixin generate-grid($name: "s", $media: "<=", $resolution: "") {
+  // Esta resolucion va siempre sin mediaquery y es la que se aplica por defecto
+  @if $name == "s" and $media == "<=" {
+    @content;
+  }
+  @else if $media == ">" {
+    @media (min-width: $resolution) { @content; }
+  }
+}
+
+@each $numColumns in $numsColumns {
+  $postName:  "";
+  @if $numColumns != 12 {
+    $postName:  '-' + $numColumns;
+  }
+
+  .at-rw#{$postName} {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    &.p10 {
+      >.at-cl {
+        padding: 10px;
+      }
+    }
+    &.start { justify-content: flex-start; }
+    &.end { justify-content: flex-end; }
+    &.center { justify-content: center; }
+    &.between { justify-content: space-between; }
+    &.arround { justify-content: space-around; }
+    >.at-cl {
+      box-sizing: border-box;
+      @each $responsive in $listResponsive {
+        @include generate-grid(nth($responsive, 1), nth($responsive, 2), nth($responsive, 3)) {
+          $colname: nth($responsive, 1);
+          $iNumCol: $numColumns;
+          -webkit-box-flex: 1;
+          flex: 1;
+          @while $iNumCol > 0 {
+            &.#{$colname}#{$iNumCol} {
+              $width: $iNumCol/$numColumns * 100%;
+              -webkit-box-flex: 0;
+              -ms-flex: 0 0 $width;
+              flex: 0 0 $width;
+              max-width: $width;
+            }
+            $iNumCol: $iNumCol - 1;
+          }
+        }
+      }
+    }
+  }
+}

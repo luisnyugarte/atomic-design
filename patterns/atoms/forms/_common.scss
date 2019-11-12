@@ -1,0 +1,271 @@
+%input{
+  appearance: none;
+  -ms-appearance:none;
+  background: transparent;
+  border: $border_1 $neutral_5;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: $size_1x;
+  color: $neutral_4;
+  display: block;
+  font-size: $font_18x;
+  font-family: $r-regular, sans-serif;
+  line-height: 1.8rem;
+  outline: none;
+  min-width: 200px; //Width for examples
+  &::placeholder{
+    color: transparentize($neutral_2, .1);
+  }
+  &:hover{
+    border: $border_1 $neutral_5;
+  }
+  &:focus{
+    border: $border_1 $neutral_6;
+    color: $neutral_6;
+  }
+}
+%label-animate {
+  font-family: $r-regular, sans-serif;
+  color: $primary_1;
+  display: table;
+  position: relative;
+  margin: 20px 0;
+  span {
+    transform: $transform_2;
+    font-size: $font_18x;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s all;
+    color: $primary_1;
+    line-height: 1.5rem;
+    color: $neutral_4;
+  }
+  small {
+    font-size: $font_2x;
+    padding: 0 12px;
+  }
+  em{
+    position: absolute;
+    right: $size_1x;
+    top: 50%;
+    margin-top: -20px;
+    font-size: $font_2x;
+    color: $primary_1;
+    span{
+      position: initial;
+      color: $primary_1;
+      font-size: $font_2x;
+    }
+  }
+  &:hover {
+    input, select{
+      border: $border_1 transparentize($primary_1, .5);
+    }
+    em{
+      span{
+        color: $neutral_5;
+      }
+    }
+  }
+  &:focus{
+    outline: none;
+    span, small {
+      color: $primary_1;
+    }
+    input, select{
+      border: $border_1 $primary_1;
+    }
+    i{
+      &:before{
+        color: transparentize($primary_1, .5);
+      }
+    }
+  }
+  &.active {
+    span {
+      font-size: $font_2x;
+      transform: $transform_3;
+      background-color: $neutral_1;
+      padding: 0 3px;
+      color: $primary_1;
+      line-height: 1.14rem;
+    }
+    input, select {
+      border: $border_1 transparentize($primary_1, .5);
+      color: $primary_1;
+      &:focus{
+        border: $border_1 $primary_1;
+        color: $primary_1;
+      }
+    }
+    small {
+      color: $primary_1;
+    }
+    em{
+      span{
+        color: transparentize($primary_1, .1);
+        background-color: transparent;
+      }
+    }
+    &:hover {
+      span {
+        color: transparentize($primary_1, .1);
+      }
+    }
+    i{
+      &:before{
+        color: $primary_1;
+      }
+    }
+    &:before{
+      color: $secundary_1;
+    }
+  }
+  &.disabled {
+    span {
+      color: transparentize($neutral_2, .8);
+    }
+    input, select{
+      border: $border_1 transparentize($neutral_2, .1);
+      color: transparentize($neutral_2, .8);
+    }
+    small{
+      color: transparentize($neutral_2, .1);
+    }
+    &:before{
+      color: transparentize($neutral_2, .5);
+    }
+    i{
+      &:before{
+        color: transparentize($neutral_2, .1);
+      }
+    }
+    &.active{
+      span, small{
+        color: transparentize($neutral_2, .1);
+      }
+      input, select{
+        color: transparentize($neutral_2, .8);
+      }
+    }
+  }
+  &.error{
+    span {
+      color: $utility_2;
+    }
+    input, select{
+      border: $border_1 $utility_2;
+      color: transparentize($neutral_2, .1);
+    }
+    small {
+      color: $utility_2;
+    }
+    &:hover{
+      span{
+        color: $neutral_2;
+      }
+    }
+    i{
+      &:before{
+        color: $utility_2;
+      }
+    }
+    // &:before{
+    //   color: $utility_2;
+    // }
+  }
+  &.icon-left, &.icon-right{
+    i{
+      position: absolute;
+      top: 16px;
+      &:before{
+        font-size: $font_14x;
+        color: $neutral_2;
+      }
+    }
+    &.active{
+      i{
+        &:before{
+          color: transparentize($primary_1, .5);
+        }
+      }
+    }
+    &.error{
+      i{
+        &:before{
+          color: $utility_2;
+        }
+      }
+    }
+  }
+}
+%checkbox {
+  position: relative;
+  display: inline-block;
+  label{
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgba(120,120,120,0.54);
+    border-radius: 2px;
+    background: $neutral_1;
+    display: inline-block;
+    position: relative;
+  }
+  input{
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+  }
+  input:checked + label{
+    background: $secundary_1;
+    border: 2px solid $secundary_1;
+  }
+}
+%radio_button {
+  position: relative;
+  display: inline-block;
+  label{
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border: $border_1 transparentize($neutral_2, 0.46);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  input{
+    opacity: 0;
+    position: absolute;
+  }
+  input:checked + label{
+    border:2px solid $secundary_1;
+  }
+  input:checked + label:after{
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background: $secundary_1;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+}
+%switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 14px;
+}
+@include for-tablet{
+  %label-animate{
+    &.active{
+      &:hover{
+        span{
+          color: transparentize($primary_1, .1);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.at-button-shadow-emphasis{
+  @extend %button;
+  background-color: $secundary_1;
+  box-shadow: $shadow_1;
+  color:$neutral_1;
+  padding:0 18px;
+  &:hover{
+    color: $neutral_1;
+    background-color:$secundary_3;
+  }
+  &:disabled{
+    background-color: transparentize($secundary_1, .7);
+    color: $neutral_1;
+  }
+  &:focus{
+    background-color: $secundary_2;
+    color: $neutral_1;
+  }
+}

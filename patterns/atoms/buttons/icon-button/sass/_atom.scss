@@ -1,0 +1,35 @@
+.at-button-icon{
+  @extend %button;
+  border: $border_1 transparentize($neutral_2, .5);
+  color: $neutral_2;
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: center;
+  padding:0 18px;
+  &[class*='ic-']{
+    &:before{
+      color: $primary_1;
+    }
+    &:hover, &:focus, &:disabled{
+      &:before{
+        color: $neutral_1;
+      }
+    }
+  }
+  &:hover{
+    color: $neutral_1;
+    background-color:$secundary_3;
+    border: $border_1 transparent;
+  }
+  &:disabled{
+    background-color: transparentize($secundary_1, .7);
+    border: $border_1 transparent;
+    color: $neutral_1;
+  }
+  &:focus{
+    background-color:$secundary_2;
+    border: $border_1 transparent;
+    color: $neutral_1;
+  }
+}

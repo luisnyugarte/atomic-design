@@ -1,0 +1,120 @@
+.ml-card-paquetes{
+  .at-card-low-emphasis{
+    padding: 0;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    @include for-mobile{
+      display: block;
+      padding: 12px 6px;
+      box-sizing: border-box;
+    }
+  }
+  img{
+    display: inline-block;
+    vertical-align: middle;
+    @include for-mobile{
+      display: block;
+      width: 100%;
+      max-width: initial;
+      max-height: initial;
+    }
+  }
+  .content-card {
+    @extend %content-card;
+    .at-element-list{
+      padding-bottom: 3rem;
+      @include for-mobile {
+        padding-bottom: 0;
+      }
+      li{
+        display: table;
+        margin: 1rem 0;
+        span {
+          display:table-cell;
+          vertical-align: middle;
+        }
+      }
+    }
+    .information{
+      display: inline-block;
+      position: relative;
+      margin: 1rem 0;
+      width: 100%;
+      .at-font-em{
+        text-transform: uppercase;
+        font-size: $font_2x;
+        span:nth-child( 2 ){
+          margin-left: 1rem;
+        }
+      }
+      .at-font-h3{
+        span:nth-child( 1 ){
+          @include for-mobile{
+            margin-left: 0;
+          }
+        }
+        span:nth-child( 2 ){
+          margin-left: 1rem;
+          margin-right: 1rem;
+          @include for-mobile{
+            margin-right: 0;
+            margin-left: .5rem;
+          }
+        }
+      }
+      .at-font-p{
+        margin-top: 0;
+      }
+      .icon{
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        display: inline-block;
+        margin-left: .5rem;
+        margin-bottom: 1rem;
+        width: 30px;
+        height: 30px;
+        &.whatsapp{
+          background-image: url("#{$imagesPath}icons/whatsapp.svg");
+        }
+        &.facebook{
+          background-image: url("#{$imagesPath}icons/facebook.svg");
+        }
+      }
+    }
+    .buttons-left{
+      @extend %buttons;
+      text-align: left;
+      button{
+        margin-left: 6px;
+      }
+      @include for-mobile {
+        position: initial;
+        float: right;
+      }
+    }
+    .buttons-center{
+      @extend %buttons;
+      text-align: center;
+      button{
+        margin-left: 6px;
+      }
+      @include for-mobile {
+        position: initial;
+        float: right;
+      }
+    }
+    .buttons-right{
+      @extend %buttons;
+      text-align: right;
+      button{
+        margin-left: 6px;
+      }
+      @include for-mobile {
+        position: initial;
+        float: right;
+      }
+    }
+  }
+}

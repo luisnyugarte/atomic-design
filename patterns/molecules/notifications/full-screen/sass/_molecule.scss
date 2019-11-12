@@ -1,0 +1,49 @@
+.ml-notification-full-screen{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: $neutral_1;
+  top: 0;
+  left: 0;
+  @extend %notification;
+  &.with-bg{
+    background: $primary_1;
+    .container-full-screen{
+      .at-font-h4, .at-font-p{
+        color: $neutral_1;
+      }
+    }
+  }
+  .container-full-screen{
+    max-width: 500px;
+    text-align: center;
+    @include for-mobile{
+      max-width: 375px;
+    }
+    i{
+      &:before{
+        font-size: 68px;
+        color: $utility_1;
+        border: 2px solid $utility_1;
+        border-radius: 50%;
+        @include for-mobile{
+          font-size: 44px;
+        }
+      }
+      margin-bottom: 36px;
+    }
+    .at-font-h4{
+      margin: 36px 0 24px;
+    }
+    .at-font-p{
+      color: $primary_1;
+      margin-bottom: 48px;
+    }
+    .at-button, .at-button-medium-emphasis, .at-button-hight-emphasis, .at-button-shadow-emphasis{
+      margin-bottom: 24px;
+    }
+  }
+}

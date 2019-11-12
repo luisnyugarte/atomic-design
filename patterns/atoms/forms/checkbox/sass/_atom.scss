@@ -1,0 +1,35 @@
+.at-checkbox {
+  @extend %checkbox;
+  label{
+    &:after{
+      position: absolute;
+      width: 5px;
+      height: 10px;
+      transition: ease .2s;
+      top: 0;
+      left: 4px;
+      display: block;
+      border-right: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      content: '';
+    }
+  }
+}
+.at-checkbox-minus {
+  @extend %checkbox;
+  label{
+    &:after{
+      position: absolute;
+      width: 10px;
+      height: 0;
+      transition: ease .2s;
+      top: 6px;
+      left: 2px;
+      display: block;
+      border-bottom: 2px solid #fff;
+      content: '';
+    }
+  }
+}

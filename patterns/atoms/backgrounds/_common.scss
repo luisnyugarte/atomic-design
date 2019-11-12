@@ -1,0 +1,12 @@
+%card {
+  background-color: $neutral_1;
+  box-shadow: $shadow_3;
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: $border_1 transparent;
+  display: inline-block;
+  position: relative;
+  padding: 12px;
+  max-width: $grid;
+  width: 100%;
+}

@@ -1,0 +1,17 @@
+.ml-login {
+  .at-card-low-emphasis {
+    @extend %content;
+    .at-button-content {
+      max-width: 70%;
+      margin: 0 auto;
+    }
+    .at-font-p {
+      text-align: center;
+      margin: 30px 0;
+      color: $neutral_2;
+    }
+    .at-button-login {
+      float: right;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+.ml-backdrop {
+  @extend %fallball-modal;
+  z-index: 50; /* Sit on top */
+  background-color: $neutral_2; /* Fallback color */
+  animation-name: fadeIn;
+  .modal-content {
+    @extend %content-modal;
+    background-color: $neutral_1;
+    animation-name: slideIn;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+  }
+  .ic-cerrar {
+    @extend %ic-iconos;
+    float: right;
+  }
+  .ic-expandir-mas {
+    @extend %ic-iconos;
+    display: none;
+  }
+  .ic-cerrar:hover,
+  .ic-cerrar:focus {
+    color: $secundary_3;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 14px;
+    background-color: $neutral_4;
+    color: $neutral_1;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+  }
+  .modal-header-bg-blue {
+    background-color: $secundary_1;
+  }
+  .modal-header-bg-blue-2 {
+    background-color: $secundary_2;
+  }
+  .modal-header-bg-blue-3 {
+    background-color: $secundary_3;
+  }
+  .modal-body {
+    padding: 20px 26px;
+  }
+  .modal-footer {
+    padding: 2px 16px;
+    color: $neutral_1;
+  }
+  @keyframes slideIn {
+    from {
+      bottom: -600px;
+      opacity: 0;
+    }
+    to {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      bottom: -300px;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+@include for-mobile {
+  .ml-backdrop{
+    .modal-content{
+      margin-top: 34px;
+      width: auto;
+    }
+    .modal-content-bottom{
+      position: absolute;
+      width: 100%;
+      margin: 0;
+      height: auto;
+    }
+    .ic-expandir-mas{
+      float: left;
+      display: block;
+      position: relative;
+      top: 2px;
+      left: 1px;
+    }
+    .ic-cerrar {
+      position: absolute;
+      top: 16px;
+      right: 18px;
+    }
+    .modal-body{
+      overflow: auto;
+      max-height: 80vh;
+      margin-bottom: 20px;
+    }
+    .modal-body-hidden{
+      display: none;
+    }
+  }
+}

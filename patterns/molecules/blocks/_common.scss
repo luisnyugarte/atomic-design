@@ -1,0 +1,14 @@
+%content-card{
+  padding: 1rem;
+  display: table;
+  bottom: 0;
+  position: relative;
+}
+%buttons{
+  position: relative;
+  width: 100%;
+  @include for-mobile {
+    position: initial;
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,6 @@
+.ml-accordion{
+  @extend %accordion;
+  .at-card-low-emphasis{
+    padding: 0;
+  }
+}

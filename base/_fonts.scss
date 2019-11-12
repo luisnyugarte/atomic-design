@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'robotothin';
+  src: url('#{$fontsPath}roboto/roboto-thin-webfont.woff2') format('woff2'),
+       url('#{$fontsPath}roboto/roboto-thin-webfont.woff') format('woff'),
+       url('#{$fontsPath}roboto/roboto-thin-webfont.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotolight';
+  src: url('#{$fontsPath}roboto/roboto-light-webfont.woff2') format('woff2'),
+       url('#{$fontsPath}roboto/roboto-light-webfont.woff') format('woff'),
+       url('#{$fontsPath}roboto/roboto-light-webfont.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url('#{$fontsPath}roboto/roboto-regular-webfont.woff2') format('woff2'),
+       url('#{$fontsPath}roboto/roboto-regular-webfont.woff') format('woff'),
+       url('#{$fontsPath}roboto/roboto-regular-webfont.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotomedium';
+  src: url('#{$fontsPath}roboto/roboto-medium-webfont.woff2') format('woff2'),
+       url('#{$fontsPath}roboto/roboto-medium-webfont.woff') format('woff'),
+       url('#{$fontsPath}roboto/roboto-medium-webfont.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotobold';
+  src: url('#{$fontsPath}roboto/roboto-bold-webfont.woff2') format('woff2'),
+       url('#{$fontsPath}roboto/roboto-bold-webfont.woff') format('woff'),
+       url('#{$fontsPath}roboto/roboto-bold-webfont.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoblack';
+  src: url('#{$fontsPath}roboto/roboto-black-webfont.woff2') format('woff2'),
+       url('#{$fontsPath}roboto/roboto-black-webfont.woff') format('woff'),
+       url('#{$fontsPath}roboto/roboto-black-webfont.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}

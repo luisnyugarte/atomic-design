@@ -1,0 +1,20 @@
+.at-input-search{
+  @extend %input;
+  color: transparentize($neutral_2, .6);
+  border: none;
+  border-radius: 0;
+  border-left: $border_1 transparentize($neutral_2, .6);
+  padding: 0 6px;
+  width: 100%;
+  font-size: $font_18x;
+  line-height: 1.5em;
+  &::placeholder{
+    color: transparentize($neutral_2, .6);
+  }
+  &:hover{
+    border: none;
+  }
+  &:focus{
+    border: none;
+  }
+}

@@ -1,0 +1,31 @@
+@keyframes loadingLinearProgress{
+  from{
+    left: -50%;
+  }
+  to{
+    left: 100%;
+  }
+}
+.at-linear-progress-indicator{
+  @extend %linear;
+  background:  transparentize($primary_1, .9);
+  position: relative;
+  overflow: hidden;
+  &:before{
+    content: " ";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -50%;
+    width: 50%;
+    height: 5px;
+    background: $secundary_1;
+  }
+  &.loading{
+    &:before{
+      animation-duration: 1.5s;
+      animation-name: loadingLinearProgress;
+      animation-iteration-count: infinite;
+    }
+  }
+}

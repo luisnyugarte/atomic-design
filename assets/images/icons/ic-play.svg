@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="12px" viewBox="0 0 11 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>play</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-97.000000, -345.000000)" fill="#FFFFFF">
+            <path d="M98.4887745,345.089733 L107.480757,350.12756 C107.962575,350.397503 108.134335,351.006926 107.864392,351.488745 C107.774308,351.649535 107.64154,351.782302 107.480749,351.872385 L98.4887665,356.910104 C98.0069452,357.180042 97.3975237,357.008277 97.1275854,356.526456 C97.04393,356.377137 97,356.208846 97,356.03769 L97,345.962143 C97,345.409858 97.4477153,344.962143 98,344.962143 C98.1711591,344.962143 98.3394535,345.006075 98.4887745,345.089733 Z" id="play"></path>
+        </g>
+    </g>
+</svg>

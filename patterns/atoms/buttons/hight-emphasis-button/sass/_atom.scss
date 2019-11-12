@@ -1,0 +1,18 @@
+.at-button-hight-emphasis{
+  @extend %button;
+  background-color: $primary_1;
+  color:$neutral_1;
+  padding:0 12px;
+  &:hover{
+    color: $neutral_1;
+    background-color:transparentize($primary_1, .25);
+  }
+  &:disabled{
+    background-color:transparentize($primary_1, .75);
+    color: $neutral_1;
+  }
+  &:focus{
+    background-color:transparentize($primary_1, .5);
+    color: $neutral_1;
+  }
+}

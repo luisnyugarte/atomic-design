@@ -1,0 +1,66 @@
+/*
+COMMONS
+*/
+@import "backgrounds/_common.scss";
+@import "buttons/_common.scss";
+@import "typography/_common.scss";
+@import "forms/_common.scss";
+@import "progress-indicators/_common.scss";
+@import "images/_common.scss";
+@import "dividers/_common.scss";
+@import "navigation/_common.scss";
+
+/*
+ATOMS
+*/
+//Backgrounds
+@import "backgrounds/hight-emphasis-card/sass/_atom.scss";
+@import "backgrounds/medium-emphasis-card/sass/_atom.scss";
+@import "backgrounds/low-emphasis-card/sass/_atom.scss";
+
+//Buttons
+@import "buttons/hight-emphasis-button/sass/_atom.scss";
+@import "buttons/medium-emphasis-button/sass/_atom.scss";
+@import "buttons/low-emphasis-button/sass/_atom.scss";
+@import "buttons/shadow-emphasis-button/sass/_atom.scss";
+@import "buttons/content-button/sass/_atom.scss";
+@import "buttons/icon-button/sass/_atom.scss";
+@import "buttons/floating-action-button/sass/_atom.scss";
+
+//forms
+@import "forms/textfield/sass/_atom.scss";
+@import "forms/date/sass/_atom.scss";
+@import "forms/checkbox/sass/_atom.scss";
+@import "forms/radio/sass/_atom.scss";
+@import "forms/switch/sass/_atom.scss";
+@import "forms/search/sass/_atom.scss";
+@import "forms/textarea/sass/_atom.scss";
+@import "forms/select/sass/_atom.scss";
+
+//typography
+@import "typography/elements/sass/_atom.scss";
+@import "typography/links/sass/_atom.scss";
+@import "typography/paragraphs/sass/_atom.scss";
+@import "typography/titles/sass/_atom.scss";
+@import "typography/blockquote/sass/_atom.scss";
+
+//Progress indicators
+@import "progress-indicators/large-circular-indicator/sass/_atom.scss";
+@import "progress-indicators/medium-circular-indicator/sass/_atom.scss";
+@import "progress-indicators/small-circular-indicator/sass/_atom.scss";
+@import "progress-indicators/linear-indicator/sass/_atom.scss";
+
+//images
+@import "images/avatar/sass/_atom.scss";
+@import "images/hero/sass/_atom.scss";
+@import "images/landscape/sass/_atom.scss";
+@import "images/logo/sass/_atom.scss";
+@import "images/square/sass/_atom.scss";
+@import "images/center/sass/_atom.scss";
+
+//navigation
+@import "navigation/pagination/sass/atom";
+
+//dividers
+@import "dividers/divider/sass/atom";
+@import "dividers/divider-with-background/sass/atom";

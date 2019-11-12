@@ -1,0 +1,22 @@
+.at-element-span{
+  @extend %typography;
+  color: $neutral_2;
+  font-size: $font_1x;
+  line-height: 1.15rem;
+}
+.at-element-list{
+  @extend %typography;
+  list-style: none;
+  li{
+    font-size: $font_2x;
+    color: $neutral_2;
+    i{
+      float: left;
+      font-size: $font_1x;
+      margin-right: .75rem;
+      &:before{
+        font-size: $font_5x;
+      }
+    }
+  }
+}

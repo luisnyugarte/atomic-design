@@ -1,0 +1,4 @@
+.at-card-low-emphasis{
+  @extend %card;
+  box-shadow: $shadow_3;
+}

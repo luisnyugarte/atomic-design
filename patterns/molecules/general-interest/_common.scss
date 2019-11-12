@@ -1,0 +1,31 @@
+%general-interest{
+  margin: 0 6px;
+  .at-card-low-emphasis{
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 0;
+    @include for-mobile{
+      width: 300px;
+    }
+  }
+  .content-info{
+    padding: 18px 12px;
+    .content-button{
+      text-align: right;
+      .at-button {
+        padding-right: 0;
+      }
+    }
+    h4 {
+      margin-bottom: 12px;
+      font-size: $font_18x;
+      @include for-mobile {
+        font-size: $font_12x;
+      }
+    }
+    .at-button {
+      font-size: $font_3x;
+    }
+  }
+}

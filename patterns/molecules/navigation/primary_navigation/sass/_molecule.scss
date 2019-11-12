@@ -1,0 +1,12 @@
+.ml-primary-navigation{
+  @extend %navigation;
+  .dropdown{
+    > .at-link{
+      font-weight: bold;
+      position: relative;
+      line-height: 2.9rem;
+      display: block;
+      white-space: nowrap;
+    }
+  }
+}

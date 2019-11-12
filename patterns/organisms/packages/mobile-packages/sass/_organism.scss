@@ -1,0 +1,109 @@
+.or-mobile-package{
+  text-align: center;
+  position: relative;
+  font-family: $r-regular;
+  .or-package-header{
+    color: $primary_1;
+    border-top: 3px solid $product_2;
+    h1{
+      font-size: $font_25x;
+      padding: $font_2x 0 $font_4x;
+      font-family: $r-medium;
+      @include for-mobile{
+        padding-bottom: 0;
+        text-align: left;
+        margin-left: 20px;
+        padding-top: $font_3x;
+      }
+    }
+  }
+  .or-package-content{
+    text-align: left;
+    color: $neutral_2;
+    font-family: $r-light;
+    strong{
+      font-family: $r-medium;
+    }
+    ul{
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      li{
+        border-top: 1px solid transparentize($neutral_2, .8);
+        @include for-mobile{
+          border: none;
+        }
+        padding: 16px 16px 16px 36px;
+        @include for-mobile{
+          padding: 0 16px 16px 26px;
+        }
+        margin: 0;
+        list-style: none;
+        &:before{
+          background-image: url('#{$imagesPath}icons/ic-chulo-fill.svg');
+          content: '';
+          display: inline-block;
+          height: 16px;
+          width: 16px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          margin-left: -24px;
+          margin-top: 4px;
+          position: absolute;
+        }
+        p{
+          margin: 0;
+          font-size: $font_18x;
+        }
+        p:nth-child( 2 ){
+          font-size: $font_2x;
+        }
+      }
+    }
+  }
+  .or-package-footer{
+    color: $primary_1;
+    background-color: transparentize($primary_1, .95);
+    padding: 35px 0 30px;
+    position: absolute;
+    @include for-mobile{
+      border-top: 3px solid $product_2;
+    }
+    @include for-mobile{
+      position: relative;
+    }
+    bottom: 0;
+    width: 100%;
+    h2, p{
+      margin: 6px;
+    }
+    h2{
+      font-size: $font_25x;
+      font-family: $r-medium;
+      strong{
+        font-size: $font_17x;
+        @include for-mobile{
+          font-size: $font_25x;
+        }
+      }
+    }
+    p{
+      font-size: $font_18x;
+      font-family: $r-medium;
+    }
+    p:nth-child( 3 ){
+      font-size: $font_2x;
+      padding-bottom: $font_4x;
+      color: transparentize($primary_1, .5);
+    }
+  }
+}
+.or-mobile-package.at-card-low-emphasis{
+  max-width: 325px;
+  padding: 0;
+  padding-bottom: 385px;
+  @include for-mobile{
+    max-width: none;
+    padding-bottom: 0;
+  }
+}

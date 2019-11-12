@@ -1,0 +1,23 @@
+%banner{
+  display: block;
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+%content-align{
+  position: absolute;
+  bottom: 28px;
+  max-width: $grid;
+  .at-font-h1{
+    font-size: $font_10x;
+    margin: 5px 0;
+    line-height: 1.5rem;
+  }
+  .at-font-p{
+    margin: 5px 0;
+    line-height: 1.5rem;
+    @include for-mobile {
+      font-size: $font_3x;
+    }
+  }
+}

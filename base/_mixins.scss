@@ -1,0 +1,202 @@
+//Media quieries
+@mixin for-mobile-s {
+  @media (max-width: $mobile_L) { @content;}
+}
+@mixin for-mobile {
+  @media (max-width: $mobile) { @content;}
+}
+@mixin for-mobile-landscape {
+  @media (max-width: $mobile) and (orientation: landscape){ @content;}
+}
+@mixin for-tablet {
+  @media (max-width: $tablet) { @content;}
+}
+@mixin for-tablet-landscape {
+  @media (max-width: $tablet) and (orientation: landscape){ @content;}
+}
+@mixin for-mini-desktop {
+  @media (min-width: $tablet) { @content;}
+}
+@mixin for-desktop {
+  @media (min-width: $desktop) { @content;}
+}
+/*
+@mixin para el grid
+*/
+/*
+base inicial
+*/
+@mixin base-grid {
+  grid-gap: $grid-gap;
+  display: grid;
+  align-content: center;
+  @include for-tablet {
+    @include grid-size-fit(2);
+  }
+  @include for-mobile {
+    @include grid-size-fit(1);
+    grid-template-columns: 1fr;
+  }
+}
+/*
+Este se ajusta al ancho de la pantalla si falta alguna columna
+*/
+@mixin grid-size-fit($numberGrid) {
+  $grid: ($grid  - ( $grid-gap  * ( $numberGrid - 1))) / ( $numberGrid + 1);
+  grid-template-columns: repeat(auto-fit, minmax( $grid, 1fr));
+}
+/*
+Este respeta el numero columnas
+*/
+@mixin grid-size-fill($numberGrid) {
+  $grid: ($grid  - ( $grid-gap  * ( $numberGrid - 1))) / ( $numberGrid + 1);
+  grid-template-columns: repeat(auto-fill, minmax( $grid, 1fr));
+}
+/*
+Este crea los grid segun el numero columnas que deseemos
+*/
+@mixin grid-wrapper-size($numberGrid) {
+  grid-template-columns: repeat($numberGrid, 1fr);
+  grid-gap: $grid-gap;
+  display: grid;
+  @include for-tablet {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+/*
+Este crea los el desplazamiento entre las columnas
+*/
+@mixin grid-column-start($numberColumn) {
+  &.grid-column-start-#{$numberColumn}{
+    grid-column-start: $numberColumn;
+    grid-column-end: $numberColumn + 1;
+    @include for-tablet {
+      grid-column-start: none;
+      grid-column-end: 7;
+      @include for-mobile {
+        grid-column-start: 1;
+        grid-column-end: 13;
+      }
+    }
+  }
+  &.grid-column-start-#{$numberColumn}-3{
+    grid-column-start: $numberColumn;
+    grid-column-end: 4;
+    @include for-tablet {
+      grid-column-start: none;
+      grid-column-end: 7;
+      @include for-mobile {
+        grid-column-start: 1;
+        grid-column-end: 13;
+      }
+    }
+  }
+  &.grid-column-start-#{$numberColumn}-4{
+    grid-column-start: $numberColumn;
+    grid-column-end: 5;
+    @include for-tablet {
+      grid-column-start: none;
+      grid-column-end: 7;
+      @include for-mobile {
+        grid-column-start: 1;
+        grid-column-end: 13;
+      }
+    }
+  }
+  &.grid-column-start-#{$numberColumn}-5{
+    grid-column-start: $numberColumn;
+    grid-column-end: 6;
+    @include for-tablet {
+      grid-column-start: none;
+      grid-column-end: 7;
+      @include for-mobile {
+        grid-column-start: 1;
+        grid-column-end: 13;
+      }
+    }
+  }
+  &.grid-column-start-#{$numberColumn}-6{
+    grid-column-start: $numberColumn;
+    grid-column-end: 7;
+    @include for-tablet {
+      grid-column-start: none;
+      grid-column-end: 7;
+      @include for-mobile {
+        grid-column-start: 1;
+        grid-column-end: 13;
+      }
+    }
+  }
+  &.grid-column-start-#{$numberColumn}-7{
+    grid-column-start: $numberColumn;
+    grid-column-end: 8;
+    @include for-tablet {
+      grid-column-start: none;
+      grid-column-end: 7;
+      @include for-mobile {
+        grid-column-start: 1;
+        grid-column-end: 13;
+      }
+    }
+  }
+  &.grid-column-start-#{$numberColumn}-8{
+    grid-column-start: $numberColumn;
+    grid-column-end: 9;
+    @include for-tablet {
+      grid-column-start: none;
+      grid-column-end: 7;
+      @include for-mobile {
+        grid-column-start: 1;
+        grid-column-end: 13;
+      }
+    }
+  }
+  &.grid-column-start-#{$numberColumn}-9{
+    grid-column-start: $numberColumn;
+    grid-column-end: 10;
+    @include for-tablet {
+      grid-column-start: none;
+      grid-column-end: 7;
+      @include for-mobile {
+        grid-column-start: 1;
+        grid-column-end: 13;
+      }
+    }
+  }
+  &.grid-column-start-#{$numberColumn}-10{
+    grid-column-start: $numberColumn;
+    grid-column-end: 11;
+    @include for-tablet {
+      grid-column-start: none;
+      grid-column-end: 7;
+      @include for-mobile {
+        grid-column-start: 1;
+        grid-column-end: 13;
+      }
+    }
+  }
+  &.grid-column-start-#{$numberColumn}-11{
+    grid-column-start: $numberColumn;
+    grid-column-end: 12;
+    @include for-tablet {
+      grid-column-start: none;
+      grid-column-end: 7;
+      @include for-mobile {
+        grid-column-start: 1;
+        grid-column-end: 13;
+      }
+    }
+  }
+  &.grid-column-start-#{$numberColumn}-12{
+    grid-column-start: $numberColumn;
+    grid-column-end: 13;
+    @include for-tablet {
+      grid-column-start: none;
+      grid-column-end: 7;
+      @include for-mobile {
+        grid-column-start: 1;
+        grid-column-end: 13;
+      }
+    }
+  }
+}

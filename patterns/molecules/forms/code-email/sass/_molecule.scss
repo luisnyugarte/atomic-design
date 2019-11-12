@@ -1,0 +1,13 @@
+.ml-code-email {
+  .content {
+    @extend %content;
+    .at-cl {
+      position: relative;
+      .content-button {
+        display: table;
+        margin: 0 auto;
+        padding-top: 2rem;
+      }
+    }
+  }
+}

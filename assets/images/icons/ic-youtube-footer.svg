@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>YouTube</title>
+    <desc>Created with Sketch.</desc>
+    <g id="YouTube" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3-Copy">
+            <circle id="Oval" fill-opacity="0.5" fill="#00377B" cx="12" cy="12" r="12"></circle>
+            <path d="M8,8.43309989 C8,7.88444148 8.40131837,7.64745497 8.89296131,7.90201097 L15.9143621,11.5374536 C16.407531,11.7927997 16.4060051,12.2076061 15.9143621,12.4621847 L8.89296131,16.09795 C8.39979239,16.3533188 8,16.1204272 8,15.5669021 L8,8.43309989 Z" id="Rectangle" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

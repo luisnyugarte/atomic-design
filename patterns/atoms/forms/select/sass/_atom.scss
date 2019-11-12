@@ -1,0 +1,23 @@
+.at-select{
+  @extend %input;
+  option{
+    color: $neutral_2;
+    padding: {
+      top: 1rem;
+      bottom: 1rem;
+    }
+    outline: none;
+  }
+}
+.at-select-label{
+  @extend %label-animate;
+  &:before{
+    position: absolute;
+    right: 12px;
+    top: 16px;
+    font-size: $font_14x;
+    font-weight: bold;
+    color: transparentize($secundary_1, .5);
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Titles",
+  "description": "Titles",
+  "type": "atom",
+  "stability": "stable",
+  "assets": {
+    "html": [
+      "patterns/atoms/typography/titles/index.html"
+    ]
+  }
+}

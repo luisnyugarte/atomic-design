@@ -1,0 +1,30 @@
+.ml-footer-firm{
+  @extend %footer-firm;
+  .ic-facebook-footer{
+    &:before{
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 1rem;
+      color: #7f9bbd;
+      content: url(#{$imagesPath}icons/ic-facebook-footer.svg);
+    }
+  }
+  .ic-twitter-footer{
+    &:before{
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 1rem;
+      color: #7f9bbd;
+      content: url(#{$imagesPath}icons/ic-twitter-footer.svg);
+    }
+  }
+  .ic-youtube-footer{
+    &:before{
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 1rem;
+      color: #7f9bbd;
+      content: url(#{$imagesPath}icons/ic-youtube-footer.svg);
+    }
+  }
+}

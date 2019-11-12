@@ -1,0 +1,19 @@
+.at-textarea {
+  @extend %input;
+  width: 100%;
+  height: auto;
+  border: $border_2 $neutral_2;
+}
+.at-input-label{
+  @extend %label-animate;
+  .at-textarea {
+    &:focus{
+      border: $border_2 $secundary_3;
+    }
+  }
+  &.active{
+    .at-textarea {
+      border: $border_2 transparentize($primary_1, .1);
+    }
+  }
+}

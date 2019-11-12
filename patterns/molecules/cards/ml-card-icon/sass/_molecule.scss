@@ -1,0 +1,12 @@
+.ml-card-icon{
+  display: flex;
+  align-items: center;
+  i:before{
+    font-size: $font_11x;
+    background-color: transparentize($primary_1, .9);
+    border-radius: 50%;
+    padding: $font_1x;
+    float: left;
+    margin-right: $font_2x;
+  }
+}

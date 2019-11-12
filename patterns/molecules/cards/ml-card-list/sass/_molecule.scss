@@ -1,0 +1,24 @@
+.ml-card-list{
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+      display: flex;
+      align-items: baseline;
+      padding: $font_2x;
+      p{
+        margin: 0 $font_2x;
+        font-size: $font_18x;
+      }
+    }
+    li:nth-child( -n+2 ) {
+      border-bottom: 1px solid transparentize($neutral_2, .8);
+    }
+    @include for-mobile {
+      li:not( :last-child ) {
+        border-bottom: 1px solid transparentize($neutral_2, .8);
+      }
+    }
+  }
+}

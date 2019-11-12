@@ -1,0 +1,29 @@
+{
+  "name": "Card",
+  "description": "Medium Emphasis Card",
+  "type": "atom",
+  "stability": "stable",
+  "variations": {
+    "low-emphasis-card": {
+      "name": "Hight Emphasis Card",
+      "assets": {
+        "html": [
+          "patterns/atoms/backgrounds/hight-emphasis-card/index.html"
+        ]
+      }
+    },
+    "hight-emphasis-card": {
+      "name": "Low Emphasis Card",
+      "assets": {
+        "html": [
+          "patterns/atoms/backgrounds/low-emphasis-card/index.html"
+        ]
+      }
+    }
+  },
+  "assets": {
+    "html": [
+      "patterns/atoms/backgrounds/medium-emphasis-card/index.html"
+    ]
+  }
+}

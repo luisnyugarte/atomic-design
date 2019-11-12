@@ -1,0 +1,12 @@
+.ml-general-icon-circular {
+  @extend %mlgic;
+  .at-avatar-image {
+    max-width: 180px;
+    max-height: 180px;
+    @extend %mlgic-at-avatar-image;
+    &, .owl-carousel & { @extend %mlgic-owl-carousel; }
+    ~ .at-font-h4 {
+      @extend %mlgic-at-font-h4;
+    }
+  }
+}

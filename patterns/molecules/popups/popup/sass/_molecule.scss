@@ -1,0 +1,20 @@
+.ml-popup {
+  @extend %fallball-popup;
+  .popup-content {
+    @extend %content-popup;
+    text-align: left;
+    .at-font-p{
+      color: $neutral_2;
+      padding-bottom: $size_1x * 2;
+    }
+    .at-button-medium-emphasis{
+      margin: 0 $size_1x;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  .ic-cerrar {
+    @extend %ic-iconos-popup;
+  }
+}

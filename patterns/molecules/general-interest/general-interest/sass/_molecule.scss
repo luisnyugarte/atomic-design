@@ -1,0 +1,8 @@
+.ml-general-interest{
+  @extend %general-interest;
+  img {
+    max-width: 300px;
+    max-height: 168px;
+    display: block;
+  }
+}

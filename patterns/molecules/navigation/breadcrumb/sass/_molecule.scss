@@ -1,0 +1,14 @@
+.ml-breadcrumb{
+  @extend %breadcrumb;
+  .at-element-list{
+    li{
+      color: $secundary_1;
+      .at-link{
+        color: transparentize($neutral_2, .3);
+        &:hover{
+          color: $neutral_2;
+        }
+      }
+    }
+  }
+}

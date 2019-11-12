@@ -1,0 +1,11 @@
+{
+  "name": "Paragraphs",
+  "description": "Paragraphs",
+  "type": "atom",
+  "stability": "stable",
+  "assets": {
+    "html": [
+      "patterns/atoms/typography/paragraphs/index.html"
+    ]
+  }
+}

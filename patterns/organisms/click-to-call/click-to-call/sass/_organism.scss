@@ -1,0 +1,32 @@
+.or-click-to-call{
+  .or-click-to-call-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .or-click-to-call-form{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    input{
+      min-width: 280px;
+    }
+    label{
+      margin-right: $font_3x;
+    }
+    p{
+      width: 100%;
+      font-size: $font_2x;
+    }
+  }
+  .or-click-to-call-cta{
+    align-items: baseline;
+    @include for-mobile{
+      margin-top: $font_3x;
+      button{
+        margin-left: auto;
+      }
+    }
+  }
+}

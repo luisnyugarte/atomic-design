@@ -1,0 +1,7 @@
+.or-general-interest{
+  @extend %or-general-interest;
+  img {
+    max-width: 300px;
+    max-height: 168px;
+  }
+}

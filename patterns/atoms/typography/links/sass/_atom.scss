@@ -1,0 +1,14 @@
+.at-link{
+  @extend %typography;
+  color: $secundary_1;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  &:hover{
+    color:$secundary_3;
+  }
+  &:focus,
+  &:active {
+    color: $secundary_2;
+  }
+}

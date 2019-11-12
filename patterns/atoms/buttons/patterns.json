@@ -1,0 +1,45 @@
+{
+  "name": "Button",
+  "description": "Primary button",
+  "type": "atom",
+  "stability": "stable",
+  "variations": {
+    "low-emphasis-button": {
+      "name": "Low Emphasis Button",
+      "assets": {
+        "html": [
+          "patterns/atoms/buttons/low-emphasis-button/index.html"
+        ]
+      }
+    },
+    "medium-emphasis-button": {
+      "name": "Medium Emphasis Button",
+      "assets": {
+        "html": [
+          "patterns/atoms/buttons/medium-emphasis-button/index.html"
+        ]
+      }
+    },
+    "content-container-button": {
+      "name": "Content Container Button",
+      "assets": {
+        "html": [
+          "patterns/atoms/buttons/content-container-button/index.html"
+        ]
+      }
+    },
+    "shadow-emphasis-button": {
+      "name": "Shadow Emphasis Button",
+      "assets": {
+        "html": [
+          "patterns/atoms/buttons/shadow-emphasis-button/index.html"
+        ]
+      }
+    }
+  },
+  "assets": {
+    "html": [
+      "patterns/atoms/buttons/hight-emphasis-button/index.html"
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+.at-input-date{
+  @extend %input;
+  position: relative;
+  line-height: 1.6rem;
+  min-height: 56px;
+  &::-webkit-outer-spin-button, &::-webkit-inner-spin-button{
+    appearance: none;
+    display: none;
+    margin: 0;
+  }
+  &::-webkit-calendar-picker-indicator {
+    appearance: none;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 16px;
+    width: 30px;
+    height: 30px;
+  }
+}
+.at-input-label-date{
+  @extend %label-animate;
+  span {
+    font-size: $font_2x;
+    transform: $transform_3;
+    background-color: $neutral_1;
+    padding: 0 3px;
+    color: $primary_1;
+    line-height: 1.14rem;
+    z-index: 1;
+  }
+  i{
+    &:before{
+      position: absolute;
+      right: $size_1x;
+      top: 16px;
+      font-size: $font_14x;
+      pointer-events: none;
+    }
+  }
+  &.active{
+    i{
+      &:before{
+        color: $secundary_3;
+      }
+    }
+  }
+}

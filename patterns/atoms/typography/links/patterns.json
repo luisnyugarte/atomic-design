@@ -1,0 +1,11 @@
+{
+  "name": "Links",
+  "description": "Text",
+  "type": "atom",
+  "stability": "stable",
+  "assets": {
+    "html": [
+      "patterns/atoms/typography/links/index.html"
+    ]
+  }
+}

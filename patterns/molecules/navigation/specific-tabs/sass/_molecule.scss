@@ -1,0 +1,33 @@
+.ml-specific-tabs{
+  .list-tabs{
+    height: 48px;
+    display: flex;
+    align-items: center;
+    .tab{
+      padding: 12px;
+      font-family: $r-semibold;
+      font-size: $font_3x;
+      color: $neutral_2;
+      transition: .3s ease;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+      &.actived{
+        color: $secundary_1;
+        border-bottom: 2px solid $secundary_1;
+      }
+      &:hover{
+        color: $secundary_1;
+      }
+    }
+  }
+  .contents-tabs{
+    .body-tab{
+      display: none;
+      padding: 1rem 2rem;
+      box-sizing: border-box;
+      &.opened{
+        display: block;
+      }
+    }
+  }
+}

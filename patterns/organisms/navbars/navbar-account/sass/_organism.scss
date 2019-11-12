@@ -1,0 +1,320 @@
+.or-navbar-account{
+  @extend %navbar;
+  background: $primary_1;
+  padding: $size_1x $size_1x * 11 $size_1x $size_1x * 10;
+  position: relative;
+  height: $size_1x * 5;
+  .navbar-brand{
+    @extend %navbar-brand;
+    img {
+      max-width: 60px;
+      max-height: 36px;
+    }
+    .dropdown-menu-button{
+      .ic-menu{
+        &:before{
+          padding: 0;
+        }
+      }
+    }
+    .at-logo-image{
+      width: $size_1x * 5;
+    }
+  }
+  .navbar-collapse{
+    @extend %navbar-collapse;
+    float: right;
+    margin-top: -6px;
+    .dropdown{
+      .at-link{
+        font-size: $font_3x;
+        i{
+          float: right;
+          margin: 0;
+          border-radius: 100%;
+          padding: 9.5px;
+          &:before{
+            color: $neutral_1;
+            font-size: $font_13x;
+            margin: 0 auto;
+          }
+          &:hover{
+            background: transparentize($primary_3, .7);
+            &:before{
+              color: $secundary_1;
+            }
+          }
+          &.ic-expandir-mas{
+            &:before{
+              margin-left: $size_1x;
+              font-size: $font_14x;
+            }
+          }
+          .full{
+            @extend %full-icon;
+          }
+        }
+      }
+      .at-card-medium-emphasis{
+        margin-top: 6px;
+      }
+      &.username{
+        padding: $size_1x;
+        > .at-link{
+          margin-top: 4px;
+          i{
+            padding: 0;
+            &:hover{
+              background: none;
+              &:before{
+                color: $neutral_1;
+              }
+            }
+          }
+        }
+        .at-card-medium-emphasis{
+          right: 10px;
+          padding: 0;
+          .at-link{
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            &:hover{
+              background: transparentize($primary_1, .9);
+              color: $primary_1;
+              font-weight: bold;
+            }
+            i{
+              float: left;
+              padding: 0;
+              margin-right: $size_1x;
+              &:before{
+                color: $primary_1;
+              }
+              &:hover{
+                background: none;
+              }
+            }
+            &.sing-out{
+              background: transparentize($neutral_2, .9);
+              i{
+                &:before{
+                  color: $neutral_2;
+                }
+              }
+              &:hover{
+                background: transparentize($primary_1, .9);
+              }
+            }
+          }
+        }
+      }
+      &.notification{
+        .at-card-medium-emphasis{
+          background: transparentize($primary_1, .9);
+          padding: 0;
+          width: $size_1x * 29;
+          .at-font-p{
+            display: inline-block;
+            padding: $size_1x $size_1x * 2;
+          }
+          .at-font-small {
+            color: $neutral_2;
+            padding: $size_1x $size_1x * 2;
+            float: right;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+          .at-link{
+            text-align: center;
+            font-size: $font_1x;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: table;
+            margin: 0 auto;
+            position: relative;
+            &:before{
+              content: "";
+              color: $secundary_1;
+              font-size: $font_14x;
+              cursor: pointer;
+              transform: rotate(180deg);
+              position: absolute;
+              right: -18px;
+              top: 7px;
+            }
+          }
+          .notifications{
+            background: $neutral_1;
+            word-wrap: break-word;
+            .full{
+              .at-link{
+                display: block;
+                padding: $size_1x * 1.1 $size_1x * 4 $size_1x * 1.1 $size_1x * 2;
+                font-size: $font_2x;
+                font-weight: normal;
+                text-align: left;
+                text-transform: initial;
+                position: relative;
+                color: $primary_1;
+                border-bottom: .5px solid transparentize($neutral_2, .5);
+                &:last-child{
+                  border: none;
+                }
+                &:before{
+                  content: "\e914";
+                  border: .5px solid $secundary_1;
+                  border-radius: 100%;
+                  font-size: $font_3x;
+                  position: absolute;
+                  right: $size_1x * 2;
+                  top: 50%;
+                  margin-top: -7px;
+                  font-size: .875rem;
+                  transform: none;
+                }
+                &.not-read{
+                  background: transparentize($product_2, .9);
+                }
+                .at-font-small{
+                  display: block;
+                  float: none;
+                  padding: 0;
+                  font-weight: initial;
+                  text-transform: capitalize;
+                }
+              }
+            }
+            .empty{
+              display: none;
+              text-align: center;
+              padding: $size_1x * 2.75;
+            }
+          }
+        }
+      }
+    }
+    .ml-basic-search{
+      position: absolute;
+      right: $size_1x * 10.5;
+      left: auto;
+      width: 60%;
+      top: 50%;
+      margin-top: -18px;
+      display: none;
+      transition: $transition_1;
+      i{
+        &:before{
+          color: transparentize($neutral_1, .5);
+          font-size: $font_15x;
+        }
+      }
+    }
+  }
+  @include for-tablet{
+    padding: $size_1x $size_1x * 7.5;
+    .navbar-brand{
+      .dropdown-menu-button{
+        display: none;
+      }
+    }
+    .navbar-collapse{
+      .ml-basic-search{
+        right: calc(48px + #{$size_1x * 7.5});
+        width: 60%;
+        left: auto;
+      }
+    }
+  }
+  @include for-mobile{
+    padding: $size_1x;
+    .navbar-brand{
+      .dropdown-menu-button{
+        margin-top: -7px;
+        display: block;
+      }
+      .at-logo-image{
+        margin: 0 $size_1x;
+      }
+    }
+    .navbar-collapse{
+      .dropdown{
+        &.username{
+          display: none;
+          box-sizing: border-box;
+          box-shadow: $shadow_2;
+          background: $neutral_1;
+          padding: 0;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          > .at-link{
+            color: $primary_1;
+            display: block;
+            margin: 0;
+            padding: $size_1x;
+            font-size: $font_19x;
+            span{
+              font-weight: bold;
+            }
+          }
+          .at-card-medium-emphasis{
+            display: block;
+            width: 100%;
+            position: relative;
+            right: auto;
+            margin: 0;
+            &:before{
+              content: none;
+            }
+            .at-link{
+              border-right: .5px solid transparentize($neutral_2, .8);
+              border-bottom: .5px solid transparentize($neutral_2, .8);
+              display: block;
+              float: left;
+              text-align: center;
+              font-size: $font_18x;
+              width: 33%;
+              &:nth-child( 3n ){
+                border-right: .5px solid $neutral_1;
+              }
+              i{
+                float: none;
+                display: block;
+                margin: 0;
+                margin-bottom: $size_1x / 2;
+                text-align: center;
+              }
+              &.sing-out{
+                font-weight: bold;
+                border: none;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                i{
+                  display: inline-block;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      .ml-basic-search{
+        right: calc(48px + #{$size_1x});
+        button{
+          padding: 0 $size_1x;
+        }
+      }
+    }
+  }
+  @include for-mobile-s{
+    .ml-basic-search{
+      width: 56%;
+    }
+  }
+}

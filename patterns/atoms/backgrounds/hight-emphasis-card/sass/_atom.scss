@@ -1,0 +1,5 @@
+.at-card-hight-emphasis{
+  @extend %card;
+  border: $border_1 $secundary_1;
+  box-shadow: $shadow_1;
+}

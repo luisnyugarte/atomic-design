@@ -1,0 +1,85 @@
+%content-popup {
+  display: table;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  animation-duration: .4s;
+  box-shadow: $shadow_5;
+  box-sizing: border-box;
+  background: $neutral_1;
+  top: $size_1x * 10;
+  border-radius: 2px;
+  padding: 0 24px;
+  text-align: center;
+  min-width: 440px;
+  max-width: 560px;
+  .content-popup-title{
+    height: 64px;
+    display: flex;
+    align-items: center;
+  }
+  .content-buttons-right{
+    height: 52px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .content-buttons-center{
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-buttons-left{
+    height: 52px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  %buttons{
+    text-align: right;
+  }
+  .at-font-h4{
+    font-size: $font_18x;
+  }
+}
+%fallball-popup {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  animation-duration: .4s;
+  z-index: 50; /* Sit on top */
+  background-color: transparentize($secundary_6, .5); /* Fallback color */
+  animation-name: fadeIn;
+}
+%ic-iconos-popup {
+  color: $neutral_1;
+  font-size: $size_1x * 2;
+  font-weight: bold;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  &:hover,
+  &:focus {
+    color: $secundary_3;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+@include for-mobile {
+  %content-popup{
+    width: 96%;
+    min-width: auto;
+    .at-font-h4{
+      font-size: $font_18x;
+    }
+    .at-font-small-legal{
+      font-size: $font_2x;
+    }
+  }
+}

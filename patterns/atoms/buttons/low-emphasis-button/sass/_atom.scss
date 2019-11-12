@@ -1,0 +1,18 @@
+.at-button{
+  @extend %button;
+  border-color: $primary_1;
+  color: $primary_1;
+  padding:0 12px;
+  &:hover{
+    border-color: transparentize($primary_1, .25);
+    color: transparentize($primary_1, .25);
+  }
+  &:disabled{
+    border-color: transparentize($primary_1, .75);
+    color: transparentize($primary_1, .75);
+  }
+  &:focus{
+    border-color: transparentize($primary_1, .5);
+    color: transparentize($primary_1, .5);
+  }
+}

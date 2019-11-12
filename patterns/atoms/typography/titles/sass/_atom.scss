@@ -1,0 +1,50 @@
+.at-font-h1{
+  @extend %typography;
+  font-size: $font_17x;
+  font-weight: normal;
+}
+.at-font-h2{
+  @extend %typography;
+  font-size: $font_6x;
+  font-weight: normal;
+}
+.at-font-h3{
+  @extend %typography;
+  font-size: $font_14x;
+  font-weight: normal;
+}
+.at-font-h4{
+  @extend %typography;
+  font-size: $font_12x;
+  font-weight: normal;
+}
+.at-font-h5{
+  @extend %typography;
+  font-size: $font_18x;
+  font-weight: normal;
+}
+.at-font-h6{
+  @extend %typography;
+  font-size: $font_2x;
+  font-weight: normal;
+}
+@include for-mobile{
+  .at-font-h1{
+    font-size: $font_27x;
+  }
+  .at-font-h2{
+    font-size: $font_8x;
+  }
+  .at-font-h3{
+    font-size: $font_4x;
+  }
+  .at-font-h4{
+    font-size: $font_18x;
+  }
+  .at-font-h5{
+    font-size: $font_3x;
+  }
+  .at-font-h6{
+    font-size: $font_2x;
+  }
+}

@@ -1,0 +1,24 @@
+.ml-footer-navigation{
+  @extend %block-navigation;
+  .ic-phone-footer{
+    &:before{
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 1rem;
+      color: #7f9bbd;
+      content: url(#{$imagesPath}icons/ic-phone.svg);
+    }
+  }
+  .block-navigation{
+    .elements-navigation.navigation-line-atention{
+      .at-element-list{
+        li{
+          display: flex;
+          i{
+            margin-right: .5rem;
+          }
+        }
+      }
+    }
+  }
+}

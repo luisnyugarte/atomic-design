@@ -1,0 +1,30 @@
+.ml-revendedor{
+  .content {
+    img {
+      max-width: 500px;
+      max-height: 281px;
+    }
+    position: relative;
+    .content-info {
+      position: absolute;
+      bottom: 0;
+      height: 48px;
+      width: 96%;
+      background-color: transparentize($primary_1, .6);
+      transition: height $transition_2;
+      font-family: $r-semibold;
+      padding: 0 2%;
+      h4 {
+        color: $neutral_1;
+        text-orientation: unset;
+        vertical-align: center;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+    }
+    &:hover .content-info {
+      height: 72px;
+    }
+  }
+}

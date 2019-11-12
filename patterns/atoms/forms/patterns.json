@@ -1,0 +1,45 @@
+{
+  "name": "Forms",
+  "description": "Textfield",
+  "type": "atom",
+  "stability": "stable",
+  "variations": {
+    "checkbox": {
+      "name": "Checkbox",
+      "assets": {
+        "html": [
+          "patterns/atoms/forms/checkbox/index.html"
+        ]
+      }
+    },
+    "date": {
+      "name": "Date",
+      "assets": {
+        "html": [
+          "patterns/atoms/forms/date/index.html"
+        ]
+      }
+    },
+    "radio": {
+      "name": "Radio",
+      "assets": {
+        "html": [
+          "patterns/atoms/forms/radio/index.html"
+        ]
+      }
+    },
+    "switch": {
+      "name": "Switch",
+      "assets": {
+        "html": [
+          "patterns/atoms/forms/switch/index.html"
+        ]
+      }
+    }
+  },
+  "assets": {
+    "html": [
+      "patterns/atoms/forms/textfield/index.html"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+.ml-card-offer{
+  &.at-card-low-emphasis{
+    padding: $font_4x $font_2x;
+  }
+  .at-vertical-aling{
+    display: flex;
+    align-items: center;
+  }
+  font-family: $r-light;
+  text-align: left;
+  strong{
+    font-family: $r-medium;
+  }
+  .at-center{
+    text-align: center;
+  }
+  i:before{
+    font-size: $font_11x;
+    background-color: transparentize($primary_1, .9);
+    border-radius: 50%;
+    padding: $font_1x;
+    float: left;
+  }
+  p{
+    font-size: $font_18x;
+    color: $neutral_2;
+    margin: 0;
+  }
+  .ml-card-offer-content{
+    &:nth-child( 1 ){
+      border: none;
+    }
+    i{
+      margin-right: $font_4x;
+    }
+    padding-left: $font_3x;
+    border-left: 1px solid transparentize($neutral_2, .8);
+    @include for-mobile{
+      border: none;
+      padding: $font_2x 0;
+      border-top: 1px solid transparentize($neutral_2, .8);
+    }
+  }
+}

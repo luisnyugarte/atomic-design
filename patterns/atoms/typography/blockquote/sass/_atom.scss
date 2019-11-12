@@ -1,0 +1,8 @@
+.at-blockquote{
+  @extend %typography;
+  color: $neutral_2;
+  font-size: $font_2x;
+  border: $border_1 $secundary_2;
+  border-radius: 4px;
+  padding: $size_1x;
+}

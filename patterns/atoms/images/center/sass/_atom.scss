@@ -1,0 +1,6 @@
+.at-center-image {
+  @extend %images;
+  max-width: $grid;
+  margin: 0 auto;
+  display: block;
+}

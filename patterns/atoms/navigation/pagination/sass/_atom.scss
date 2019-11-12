@@ -1,0 +1,36 @@
+.at-pagination {
+  list-style-type: none;
+  padding: 0;
+  li {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    padding: 5px 15px;
+    border-right: 1px solid $neutral_2;
+    color: $neutral_2;
+    font-family: $r-regular;
+    &:last-child {
+      border-right: 0 solid transparent;
+    }
+    a {
+      color: $neutral_2;
+      text-decoration: none;
+    }
+    &:hover {
+      a {
+        color: $secundary_1;
+      }
+    }
+  }
+  .active {
+    background-color: $secundary_1;
+    a {
+      color: $neutral_1;
+    }
+    &:hover {
+      a {
+        color: $neutral_1;
+      }
+    }
+  }
+}

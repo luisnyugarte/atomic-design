@@ -1,0 +1,23 @@
+%or-general-interest{
+  .content-header{
+    text-align: center;
+    padding: 12px 0 36px;
+  }
+  .content-body{
+    max-width: $grid;
+    margin: 0 auto;
+    @include for-mobile{
+      overflow-x: scroll;
+    }
+    .contenido{
+      @include for-mobile{
+        width: 830px;
+      }
+    }
+  }
+  .in-mobile-slider {
+    .owl-dots {
+      margin-bottom: 20px;
+    }
+  }
+}

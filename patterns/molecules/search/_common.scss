@@ -1,0 +1,36 @@
+%box-search{
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  .at-card-medium-emphasis{
+    display: none;
+    padding: 12px $size_1x * 2;
+    box-sizing: border-box;
+    max-width: none;
+    .at-font-h4{
+      font-size: $font_2x;
+      color: transparentize($neutral_2, .4);
+      font-weight: normal;
+      text-transform: uppercase;
+      margin: 12px 0;
+    }
+    .at-link{
+      display: block;
+      font-size: $font_3x;
+      padding: 6px 12px;
+      color: $neutral_2;
+    }
+  }
+}
+@include for-mobile{
+  %box-search{
+    .at-input-label{
+      .at-input-search{
+        font-size: $font_3x;
+        &::placeholder{
+          font-size: $font_3x;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.ml-card-informative{
+  .at-card-low-emphasis{
+    @include for-mobile{
+      padding: 0 6px;
+      padding-bottom: 12px;
+    }
+  }
+  .content-img{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 32px 12px 18px;
+    box-sizing: content-box;
+    @include for-mobile{
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 12px;
+    }
+    img{
+      max-width: 80px;
+      max-height: 80px;
+      float: none;
+      margin-top: -80px;
+      @include for-mobile {
+        margin-top: -40px;
+      }
+    }
+  }
+  .content-card {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%;
+    @include for-mobile{
+      display: block;
+      width: 100%;
+    }
+    .content-info{
+      display: inline-block;
+      vertical-align: middle;
+      float: left;
+      width: 50%;
+      @include for-mobile{
+        display: block;
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 18px;
+      }
+      .at-font-h4{
+        font-size: $font_4x;
+        @include for-mobile{
+          font-size: $font_12x;
+        }
+      }
+    }
+    .content-buttons {
+      display: inline-block;
+      vertical-align: middle;
+      float: right;
+      margin-top: .5rem;
+      @include for-mobile{
+        display: block;
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+    }
+  }
+}

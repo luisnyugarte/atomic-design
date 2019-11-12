@@ -1,0 +1,82 @@
+.or-navbar-top{
+  @extend %navbar;
+  display: table;
+  background: $primary_3;
+  padding: 0 $size_1x * 10;
+  .navbar-brand{
+    @extend %navbar-brand;
+    .at-link{
+      padding: 10px $size_1x;
+      &.active{
+        background: $primary_1;
+      }
+    }
+  }
+  .navbar-collapse{
+    @extend %navbar-collapse;
+    float: right;
+    .dropdown{
+      padding: 8px $size_1x;
+      i{
+        float: right;
+        margin: 0 $size_1x;
+        &:before{
+          color: $neutral_1;
+          font-size: $font_4x;
+        }
+      }
+      .at-card-medium-emphasis {
+        right: 10px;
+        top: 90%;
+      }
+      &.my-account{
+        > i{
+          display: none;
+        }
+      }
+    }
+  }
+  @include for-tablet{
+    padding: 0;
+    .navbar-collapse{
+      .dropdown{
+        &.my-account{
+          > .at-link{
+            display: none;
+          }
+          > i{
+            display: block;
+          }
+        }
+        &.important-information{
+          i{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  @include for-mobile{
+    .navbar-collapse{
+      .dropdown{
+        > .at-link{
+          font-size: $font_1x;
+        }
+        padding: 6px 0;
+        margin-top: 3px;
+        .at-card-medium-emphasis{
+          right: 0;
+          top: 100%;
+        }
+      }
+    }
+  }
+  @include for-mobile-s{
+    .navbar-brand{
+      .at-link{
+        padding: 10px;
+        font-size: $font_1x;
+      }
+    }
+  }
+}

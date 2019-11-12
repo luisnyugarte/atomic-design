@@ -1,0 +1,118 @@
+/*
+COLORS
+*/
+$neutral_1: #ffffff; //Blanco
+$neutral_2: #787878; //Text
+$neutral_3: #EDF0FA; //light
+$neutral_4: #C2C4CC; //semilight
+$neutral_5: #8A8D99; //Neutral
+$neutral_6: #5C5E66; //semidark
+$neutral_7: #2E2F33; //Dark
+
+$primary_1: #4C5D99; //Primary A
+$primary_3: #17E67E; //Primary B
+
+$secundary_1: #DD0143; //Primary B
+$secundary_2: #3264DC; //Press or Highlight
+$secundary_3: #01A6DD; //Primary D Hover
+$secundary_5: #FCC400;//Primary C 
+$secundary_6: #00000A;//New black or blue dark
+
+$utility_1: #37C846;//Product
+$utility_2: #F01E46;//Error
+$utility_3: #FFAA32; //warning
+
+$product_1: #F0781E;//Product 
+$product_2: #2896FF;//Products 
+
+/*
+FONTS
+*/
+//Family
+$r-thin: 'robotothin'; /* 200 */
+$r-light: 'robotolight'; /* 300 */
+$r-regular: 'robotoregular', sans-serif; /* 500 */
+$r-medium: 'robotomedium'; /* 700 */
+$r-semibold: 'robotobold'; /* 800 */
+$r-bold: 'robotoblack'; /* 900 */
+$iconsune: 'icUne';
+
+//font-sizes
+$font_1x: .625rem;
+$font_2x: .75rem;//12px
+$font_3x: .875rem;//14px
+$font_4x: 1.25rem;//20px
+$font_5x: 1.625rem;
+$font_6x: 2.25rem;//36
+$font_7x: 2.375rem;//38px
+$font_8x: 1.75rem;//28px
+$font_9x: 1.62rem;
+$font_10x: 1.375rem;
+$font_11x: 2rem;
+$font_12x: 1.125rem;//18px
+$font_13x: 1.85rem;
+$font_14x: 1.5rem;//24px
+$font_15x: 2.5rem;
+$font_16x: .5rem;
+$font_17x: 3rem;//48px
+$font_18x: 1rem;//16px
+$font_19x: 1.16rem;
+$font_20x: 4.5rem;
+$font_21x: 5rem;
+$font_22x: 3.5rem;
+$font_23x: 6rem;//96px
+$font_24x: 3.75rem;//60px
+$font_25x: 2.125rem;//34px
+$font_26x: 1.875rem;//30px
+$font_27x: 2.625rem;//30px
+
+//Size UX
+$size_1x: 12px;
+/*
+GRID
+*/
+$grid: 1170px;
+$grid-gap: 10px;
+
+/*
+BORDERS AND SHADOWS
+*/
+//Box shadow
+$shadow_1: 0 0 18px 0 rgba(0,0,0,.18), 0 18px 18px 0 rgba(0,0,0,.18); //hight shadow
+$shadow_2: 0 0 10px 0 rgba(0,0,0,.17), 0 10px 10px 0 rgba(0,0,0,.10); //medium shadow
+$shadow_3: 0 0 2px 0 rgba(0,0,0,.14), 0 2px 2px 0 rgba(0,0,0,.24); //low shadow
+$shadow_4: 0 0 1px 0 rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.24); //tiny shadow
+$shadow_5: 0 0 24px 0 rgba(0,0,0,.22), 0 24px 24px 0 rgba(0,0,0,.30);; //Dialog shadow
+$shadow_6: 0 0 16px 0 rgba(0,0,0,0.18), 0 16px 16px 0 rgba(0,0,0,0.24); //Drawer shadow
+
+//Border
+$border_1: 1px solid;
+$border_2: 2px solid;
+$border_3: 3px solid;
+/*
+TRANSITIONS
+*/
+$transition_1: all .3s;
+$transition_2: ease .2s;
+/*
+TRANSFORM
+*/
+$transform_1: translate(-50%, -50%);
+$transform_2: translate(12px, 15px) scale(1);
+$transform_3: translate(12px, -10px) scale(1);
+/*
+MEDIA QUERIES
+*/
+$mobile_L: 480px;
+$mobile: 768px;
+$tablet: 1024px;
+$desktop: 1280px;
+
+/*
+ASSETS PATH
+*/
+
+//Images
+$imagesPath: "../../../../../assets/images/";
+//Fonts
+$fontsPath: "../../../../../assets/fonts/";

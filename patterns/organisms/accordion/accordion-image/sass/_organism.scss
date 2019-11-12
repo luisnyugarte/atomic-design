@@ -1,0 +1,7 @@
+.or-accordion-image{
+  @extend %accordion-image;
+  img {
+    max-width: 627px;
+    max-height: 353px;
+  }
+}

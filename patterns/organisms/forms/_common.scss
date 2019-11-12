@@ -1,0 +1,54 @@
+%or-forms{
+  .container-form{
+    .form-left{
+      label{
+        width: 100%;
+        display: block;
+        vertical-align: top;
+        input, select{
+          width: 100%;
+        }
+      }
+      .row-inputs{
+        width: 100%;
+        display: block;
+        vertical-align: top;
+        margin: -20px 0;
+        label{
+          width: 49%;
+          display: inline-block;
+          vertical-align: top;
+        }
+      }
+    }
+    .form-right{
+      label{
+        width: 100%;
+        display: block;
+        vertical-align: top;
+        input, select{
+          width: 100%;
+        }
+      }
+      .row-inputs{
+        width: 100%;
+        display: block;
+        vertical-align: top;
+        margin-bottom: -20px;
+        label:nth-child(1){
+          width: 15%;
+          display: inline-block;
+          vertical-align: top;
+          select{
+            min-width: 100%;
+          }
+        }
+        label:nth-child(2){
+          width: 84%;
+          display: inline-block;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+}

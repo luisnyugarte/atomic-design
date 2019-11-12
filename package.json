@@ -1,0 +1,52 @@
+{
+  "name": "ui-library-staging",
+  "version": "1.0.0",
+  "description": "Starterkit for the Frontify Node API.",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.1.5",
+    "@frontify/frontify-api": "^0.3.1",
+    "event-stream": "^4.0.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-filter": "^5.1.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-less": "^4.0.1",
+    "gulp-line-ending-corrector": "^1.0.3",
+    "gulp-livereload": "^4.0.0",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.0.9",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-uglifycss": "^1.1.0",
+    "jshint-stylish": "^2.2.1",
+    "node-sass": "^4.11.0",
+    "uglify": "^0.1.5"
+  },
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "glob-stream": "^6.1.0",
+    "gulp": "^3.9.0",
+    "gulp-html-extend": "^1.1.6",
+    "gulp-stylelint": "^8.0.0",
+    "husky": "^1.2.0",
+    "lint-staged": "^8.1.0",
+    "stylelint": "^9.8.0"
+  },
+  "scripts": {
+    "setup": "npm install",
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete",
+    "precommit": "gulp sass_lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

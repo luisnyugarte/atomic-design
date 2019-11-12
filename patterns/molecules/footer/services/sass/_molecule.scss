@@ -1,0 +1,22 @@
+.ml-footer-services{
+  @extend %footer-services;
+  .ic-user-protection{
+    &:before{
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 1rem;
+      color: #7f9bbd;
+      content: url(#{$imagesPath}icons/ic-user-protection.svg);
+    }
+  }
+  .ic-pqr{
+    &:before{
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 1rem;
+      color: #7f9bbd;
+      content: url(#{$imagesPath}icons/ic-pqr.svg);
+      margin-left: 6px;
+    }
+  }
+}

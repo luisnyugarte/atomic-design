@@ -1,0 +1,45 @@
+.at-button-floating-action{
+  @extend %button;
+  background-color: $secundary_1;
+  color:$neutral_1;
+  padding:0 18px;
+  height: 48px;
+  box-shadow: $shadow_2;
+  border-radius: 24px;
+  font-size: 1rem;
+  letter-spacing: 0;
+  @include for-mobile{
+    border-radius: 100px;
+    padding: 6px 5px;
+  }
+  span{
+    @include for-mobile{
+      display: none;
+    }
+  }
+  i{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 18px;
+    @include for-mobile{
+      margin-right: 0;
+    }
+    &:before{
+      color: $neutral_1;
+      font-size: 34px;
+    }
+  }
+  &:hover{
+    color: $neutral_1;
+    background-color:$secundary_3;
+    box-shadow: $shadow_6;
+  }
+  &:disabled{
+    background-color: transparentize($secundary_1, .7);
+    color: $neutral_1;
+  }
+  &:focus{
+    background-color:$secundary_2;
+    color: $neutral_1;
+  }
+}

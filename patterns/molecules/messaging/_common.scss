@@ -1,0 +1,58 @@
+%messaging{
+  text-align: center;
+  box-sizing: border-box;
+  .messagge{
+    margin: $size_1x * 3 0;
+    display: inline-block;
+    .icon-status{
+      font-size: $font_20x;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto $size_1x * 2;
+    }
+    .at-font-h4{
+      font-size: $font_5x;
+      font-family: $r-semibold;
+      margin: $size_1x 0;
+    }
+    .at-font-p{
+      color: $primary_1;
+      font-size: $font_4x;
+    }
+  }
+  .buttons{
+    margin: $size_1x * 3 0;
+    button{
+      margin: 0 $size_1x;
+    }
+  }
+}
+@include for-mobile{
+  %messaging{
+    .messagge{
+      margin: $size_1x * 2;
+      .icon-status{
+        font-size: $font_15x;
+        width: 52px;
+        height: 52px;
+        margin: 0 auto;
+      }
+      .at-font-h4{
+        font-size: $font_18x;
+      }
+      .at-font-p{
+        font-size: $font_3x;
+      }
+    }
+    .buttons{
+      button{
+        display: block;
+        margin: $size_1x auto;
+      }
+    }
+  }
+}

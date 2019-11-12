@@ -1,0 +1,13 @@
+%own-dots {
+  position: static;
+  margin-top: $size_1x * 3;
+}
+%own-dots-button-active-span {
+  background-color: $secundary_1;
+  box-shadow: 0 0 7px $neutral_2;
+}
+%own-dots-button-span {
+  width: 20px;
+  height: 20px;
+  background-color: transparentize($neutral_2, .5);
+}

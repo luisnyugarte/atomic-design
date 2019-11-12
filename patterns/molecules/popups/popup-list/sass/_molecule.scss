@@ -1,0 +1,31 @@
+.ml-popup-list {
+  @extend %fallball-popup;
+  .popup-content {
+    @extend %content-popup;
+    text-align: left;
+    .at-font-h4{
+      font-weight: normal;
+    }
+    .at-button-medium-emphasis{
+      margin: 0 $size_1x;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    .radio-list{
+      margin: $size_1x 0;
+      label{
+        font-family: $r-regular;
+        font-size: $font_3x;
+        color: $neutral_2;
+        vertical-align: top;
+      }
+    }
+    .at-button-hight-emphasis{
+      float: right;
+    }
+  }
+  .ic-cerrar {
+    @extend %ic-iconos-popup;
+  }
+}

@@ -1,0 +1,35 @@
+.or-popup-notification {
+  .ml-popup-form{
+    .popup-content{
+      padding: 0;
+      .ml-notification-information{
+        display: flex;
+        opacity: 1;
+        padding: $size_1x $size_1x * 2;
+      }
+      .box-information{
+        padding: $size_1x * 2;
+      }
+      .ic-cerrar{
+        position: relative;
+        float: right;
+        top: auto;
+        right: auto;
+      }
+      .at-font-h4{
+        font-weight: normal;
+      }
+    }
+  }
+}
+@include for-mobile{
+  .or-popup-notification {
+    .ml-popup-form{
+      .popup-content{
+        .buttons-right{
+          text-align: right;
+        }
+      }
+    }
+  }
+}

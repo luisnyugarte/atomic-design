@@ -1,0 +1,11 @@
+{
+  "name": "List",
+  "description": "Text",
+  "type": "atom",
+  "stability": "stable",
+  "assets": {
+    "html": [
+      "patterns/atoms/typography/elements/index.html"
+    ]
+  }
+}

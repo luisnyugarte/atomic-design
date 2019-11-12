@@ -1,0 +1,18 @@
+.ml-form-we-call {
+  .at-card-low-emphasis {
+    @extend %content;
+    .at-button-content {
+      max-width: 50%;
+      margin: 0 auto;
+    }
+    .at-font-p{
+      &:first-child {
+        font-size: $font_18x;
+        margin-bottom: .5rem;
+      }
+      &:last-of-type {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

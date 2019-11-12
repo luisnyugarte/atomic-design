@@ -1,0 +1,58 @@
+.at-button-switch-to-slider{
+  position: relative;
+  display: block;
+  max-width: 320px;
+  margin: 0 auto;
+  height: 36px;
+  .status{
+    background: transparentize($neutral_2, .8);
+    border-radius: 100px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 35px;
+    .progress-status{
+      background: $secundary_1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 35px;
+      width: 0;
+      border-radius: 0 50px 50px 0;
+    }
+    .text-status{
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 35px;
+      p{
+        text-transform: uppercase;
+        font-family: "robotobold";
+        margin: 0;
+        font-size: $font_3x;
+        color: transparentize($neutral_2, .7);
+      }
+    }
+    .button-switch{
+      width: 33px;
+      height: 33px;
+      background: $neutral_1;
+      border: 1px solid $secundary_1;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 9;
+      span{
+        &:before{
+          display: block;
+          transform: rotate(180deg);
+          color: $secundary_1;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

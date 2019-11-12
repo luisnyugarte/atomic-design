@@ -1,0 +1,23 @@
+.at-font-p{
+  @extend %typography;
+  color: $neutral_2;
+  font-size: $font_18x;
+}
+.at-font-em{
+  @extend %typography;
+  color: $neutral_2;
+  font-size: $font_2x;
+  font-style: normal;
+}
+.at-font-small{
+  @extend %typography;
+  color: $primary_1;
+  font-size: $font_1x;
+  line-height: 1.15rem;
+}
+.at-font-small-legal{
+  @extend %typography;
+  color: $neutral_2;
+  font-size: $font_1x;
+  line-height: 1.15rem;
+}

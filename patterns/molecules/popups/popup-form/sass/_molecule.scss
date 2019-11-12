@@ -1,0 +1,34 @@
+.ml-popup-form {
+  @extend %fallball-popup;
+  .popup-content {
+    @extend %content-popup;
+    text-align: left;
+    .at-font-h4{
+      padding: $size_1x 0;
+    }
+    .at-input-label, .at-input-textfield{
+      width: 100%;
+    }
+    .buttons-right{
+      @extend %buttons;
+      button{
+        margin: 0 $size_1x;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .ic-cerrar {
+    @extend %ic-iconos-popup;
+  }
+}
+@include for-mobile{
+  .ml-popup-form{
+    .popup-content{
+      .buttons-right{
+        text-align: center;
+      }
+    }
+  }
+}

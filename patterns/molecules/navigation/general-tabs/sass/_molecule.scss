@@ -1,0 +1,46 @@
+.ml-general-tabs {
+  .list-tabs{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    .tab{
+      padding: 12px 24px;
+      color: transparentize($neutral_2, .5);
+      border: 1px solid transparentize($neutral_2, .5);
+      border-bottom: 1px solid $secundary_1;
+      border-radius: 4px 4px 0 0;
+      font-family: $r-semibold;
+      font-size: $font_3x;
+      transition: .3s ease;
+      cursor: pointer;
+      height: 20px;
+      &.actived{
+        color: $secundary_1;
+        border: 1px solid $secundary_1;
+        border-bottom: 1px solid $neutral_1;
+        &:hover{
+          color: $secundary_1;
+          border: 1px solid $secundary_1;
+          border-bottom: 1px solid $neutral_1;
+        }
+      }
+      &:hover{
+        color: $neutral_2;
+        border: 1px solid $neutral_2;
+        border-bottom: 1px solid $secundary_1;
+      }
+    }
+  }
+  .contents-tabs{
+    border: 1px solid $secundary_1;
+    margin-top: 2px;
+    .body-tab{
+      display: none;
+      padding: 1rem 2rem;
+      box-sizing: border-box;
+      &.opened{
+        display: block;
+      }
+    }
+  }
+}

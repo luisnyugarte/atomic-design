@@ -1,0 +1,22 @@
+.ml-process-overlay{
+  @extend %messaging;
+  .messagge{
+    .icon-status{
+      font-size: 8rem;
+      i{
+        &:before{
+          color: $secundary_1;
+        }
+      }
+    }
+  }
+}
+@include for-mobile{
+  .ml-process-overlay{
+    .messagge{
+      .icon-status{
+        font-size: $font_22x;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+%linear{
+  width: 100%;
+  height: 5px;
+  display: block;
+  text-align: center;
+}
+@keyframes rotateCircularIndicator{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+%circular{
+  display: block;
+  border-radius: 100%;
+  position: relative;
+  background: $neutral_1;
+  border: $border_3  transparentize($primary_1, 0.9);
+  border-top: $border_3 $secundary_1;
+  &.loading{
+    animation-name: rotateCircularIndicator;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+}

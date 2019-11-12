@@ -1,0 +1,93 @@
+.ml-notification-colorline{
+  @extend %notification;
+  opacity: 1;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-shadow: $shadow_3;
+  .content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    .icon{
+      float: left;
+      margin: 0 24px;
+      &:before{
+        font-size: $font_26x;
+        border-radius: 100%;
+        padding: 5px;
+        color: $neutral_1;
+      }
+    }
+    .at-font-p{
+      display: block;
+      line-height: 1rem;
+      margin-left: 24px;
+    }
+  }
+  &.hightlight{
+    border-bottom: 4px solid $secundary_2;
+    .content{
+      .icon{
+        &:before{
+          background: $secundary_2;
+        }
+      }
+    }
+  }
+  &.confirmation{
+    border-bottom: 4px solid $utility_1;
+    .content{
+      .icon{
+        &:before{
+          background: $utility_1;
+        }
+      }
+    }
+  }
+  &.error{
+    border-bottom: 4px solid $utility_2;
+    .content{
+      .icon{
+        &:before{
+          background: $utility_2;
+        }
+      }
+    }
+  }
+  &.warning{
+    border-bottom: 4px solid $utility_3;
+    .content{
+      .icon{
+        &:before{
+          background: $utility_3;
+        }
+      }
+    }
+  }
+}
+@include for-tablet{
+  .ml-notification-colorline{
+    padding: 24px 12px 8px;
+    .content{
+      display: block;
+      .icon{
+        margin: 0;
+        margin-right: 12px;
+        &:before{
+          font-size: $font_10x;
+        }
+      }
+      .at-font-p{
+        font-size: $font_3x;
+      }
+      .buttons{
+        text-align: right;
+        margin-top: 14px;
+        .at-button{
+          padding: 0 8px;
+        }
+      }
+    }
+  }
+}

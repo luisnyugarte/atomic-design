@@ -1,0 +1,45 @@
+{
+  "name": "Card  with Content",
+  "description": "Big Card with Content ",
+  "type": "molecule",
+  "stability": "stable",
+  "variations": {
+    "ml-card-list": {
+      "name": "Card with List",
+      "assets": {
+        "html": [
+          "patterns/molecules/cards/ml-card-list/index.html"
+        ]
+      }
+    },
+    "ml-card-medium": {
+      "name": "Medium Card with Content",
+      "assets": {
+        "html": [
+          "patterns/molecules/cards/ml-card-medium/index.html"
+        ]
+      }
+    },
+    "ml-card-small": {
+      "name": "Small Card with Content",
+      "assets": {
+        "html": [
+          "patterns/molecules/cards/ml-card-small/index.html"
+        ]
+      }
+    },
+    "ml-card-social": {
+      "name": "Social Card",
+      "assets": {
+        "html": [
+          "patterns/molecules/cards/ml-card-social/index.html"
+        ]
+      }
+    }
+  },
+  "assets": {
+    "html": [
+      "patterns/molecules/cards/ml-card-big/index.html"
+    ]
+  }
+}

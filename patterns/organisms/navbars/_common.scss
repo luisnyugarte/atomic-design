@@ -1,0 +1,218 @@
+%navbar{
+  box-sizing: border-box;
+  box-shadow: $shadow_4;
+  display: block;
+  background: $primary_1;
+  width: 100%;
+}
+%navbar-brand{
+  display: inline-block;
+  margin-right: $size_1x;
+  .dropdown-menu-button{
+    display: none;
+    width: $size_1x * 4;
+  }
+  .at-link{
+    display: inline-block;
+    color: $neutral_1;
+    font-size: $font_2x;
+  }
+}
+%navbar-navigation{
+  .dropdown{
+    .at-link{
+      &:hover{
+        background: $primary_1;
+        color: $neutral_1;
+      }
+      &:focus,
+      &:active {
+        background: $primary_1;
+        color: $neutral_1;
+      }
+    }
+    &.pqr{
+      display: none;
+    }
+    &.is-active{
+      .at-link{
+        &:before{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+%navbar-collapse{
+  display: inline-block;
+  .dropdown{
+    float: left;
+    position: relative;
+    > .at-link{
+      color: $neutral_1;
+      font-size: $font_2x;
+    }
+    .at-card-medium-emphasis {
+      display: none;
+      padding: $size_1x;
+      position: absolute;
+      right: 0;
+      top: 100%;
+      width: $size_1x * 20;
+      z-index: 1;
+      &:before{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: -8px;
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 7px solid $neutral_1;
+      }
+      .at-link{
+        padding: $size_1x;
+        font-size: $font_3x;
+        color: $neutral_2;
+        display: block;
+      }
+    }
+    &.username{
+      .my-line{
+        display: none;
+      }
+    }
+    &.is-active{
+      .at-card-medium-emphasis{
+        display: block;
+      }
+    }
+  }
+  .ml-basic-search {
+    .at-input-label{
+      background: transparentize($primary_3, .8);
+      .at-input-search{
+        color: $neutral_1;
+        &::placeholder{
+          color: $neutral_1;
+        }
+      }
+      button, i{
+        &:before{
+          color: $neutral_1;
+        }
+      }
+    }
+  }
+}
+%full-icon{
+  position: absolute;
+  left: 50%;
+  background: $utility_2;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  padding: 1px;
+  font-family: $r-regular;
+  font-size: $font_16x;
+}
+%menu-fixed{
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+@include for-tablet{
+  %navbar-brand{
+    .dropdown-menu-button{
+      display: block;
+      float: left;
+      i{
+        &:before{
+          font-size: $font_17x;
+          color: transparentize($neutral_1, .5);
+        }
+        &.ic-menu{
+        display: block;
+        margin-left: -4px;
+        &:before{
+          color: $neutral_1;
+          float: left;
+          font-size: $font_22x;
+          }
+        }
+        &.ic-cerrar{
+          display: none;
+        }
+      }
+      &.is-active{
+        .ic-menu{
+          display: none;
+        }
+        .ic-cerrar{
+          display: block;
+        }
+      }
+    }
+  }
+}
+@include for-mobile{
+  %navbar-brand{
+    margin: 0;
+  }
+  %navigation{
+    .dropdown{
+      &.pqr{
+        display: block;
+      }
+    }
+  }
+  %navbar-collapse{
+    .dropdown{
+      &.pqr{
+        display: none;
+      }
+      &.username{
+        .my-line{
+          display: block;
+          background: transparentize($product_2, .9);
+          &:before{
+            float: right;
+            color: $secundary_1;
+            font-size: $font_11x;
+            font-weight: bold;
+            margin: 18px $size_1x;
+          }
+          .at-link{
+            box-sizing: border-box;
+            display: block;
+            padding: $size_1x;
+            width: 100%;
+            .at-font-p{
+              color: $primary_1;
+              font-size: $font_19x;
+              line-height: 1.4rem;
+              &:nth-child( 3n ) {
+                font-weight: bold;
+              }
+            }
+            i{
+              float: left;
+              padding: 0;
+              margin-right: $size_1x;
+              &:before{
+                color: $primary_1;
+                font-size: $font_15x;
+              }
+            }
+          }
+          .my-contracts{
+            display: none;
+            background: transparentize($product_2, .95);
+          }
+        }
+      }
+    }
+  }
+}

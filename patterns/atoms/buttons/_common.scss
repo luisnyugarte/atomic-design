@@ -1,0 +1,39 @@
+%button{
+  background: transparent;
+  cursor: pointer;
+  font-family: $r-medium;
+  vertical-align: middle;
+  line-height: 24px;
+  border-radius: 50px;
+  font-size: $font_3x;
+  color: $primary_3;
+  display:inline-block;
+  border:0;
+  border: $border_1 transparent;
+  transition: .3s;
+  text-decoration: none;
+  padding: 0;
+  position: relative;
+  letter-spacing: .5px;
+  &:hover{
+    color:$secundary_3;
+  }
+  &:focus,
+  &:active {
+    color: $secundary_2;
+    outline: none;
+  }
+  &:disabled{
+    cursor: initial;
+    color: rgba(0, 200, 255, .3);
+  }
+  &[class*='ic-']:before{
+    margin: 0 6px;
+    font-size: $font_14x;
+  }
+}
+@include for-mobile{
+  %button{
+    font-size: $font_3x;
+  }
+}

@@ -1,0 +1,28 @@
+.ml-success-overlay{
+  @extend %messaging;
+  .messagge{
+    .icon-status{
+      border: $border_3 $utility_1;
+      width: 94px;
+      height: 94px;
+      i{
+        &:before{
+          color: $utility_1;
+        }
+      }
+    }
+    .at-font-p{
+      color: $primary_1;
+    }
+  }
+}
+@include for-mobile{
+  .ml-success-overlay{
+    .messagge{
+      .icon-status{
+        width: 46px;
+        height: 46px;
+      }
+    }
+  }
+}
